@@ -1,0 +1,131 @@
+@90 = ~* * * Ce composant necessite l'installation prealable de Throne of Bhaal. * * *~
+@91 = ~* * * Ce composant n'est pas compatible avec Tutu. * * *~
+
+@98 = ~* * * Un composant similaire est deja present dans un des mods que vous avez installes. Prevention d'une duplication inutile de contenu. * * *~
+@99 = ~* * * Ce composant ne peut pas etre installe a cause de l'un des mods que vous utilisez actuellement. * * *~
+
+
+
+
+
+// Kit revision
+
+@100 = ~Revision du kit de Tueur de magiciens~
+@101 = ~TUEUR DE MAGICIENS : Ce guerrier se spécialise dans la traque des lanceurs de sorts profanes. Dans ce but, il conditionne son corps à résister à la magie et développe des techniques d'attaque pouvant perturber l'incantation des sorts profanes. Cet apprentissage rigoureux oblige le Tueur de magiciens à renoncer à l'utilisation du moindre objet magique, exception faite des armes, armures et potions de soins. De plus, il se doit de rester complètement dévoué à sa cause et ne peut se diriger vers d'autres professions.
+
+Avantages :
+-  Débute avec 10 % de Résistance magique
+-  Gain de 2 % de Résistance magique supplémentaires par niveau d'expérience
+-  Reçoit le talent passif "Perturbation Magique" au premier niveau
+-  Reçoit la capacité spéciale "Brise-Magie" au premier niveau, puis tous les 8 niveaux
+
+
+Désavantages :
+-  Ne peut pas utiliser d'objets magiques autres qu'armures, armes et potions de soins
+-  Ne peut pas se jumeler
+
+
+Perturbation Magique :
+Quand un Tueur de magiciens réussit à toucher un lanceur de sorts profanes, la cible se voit infliger une probabilité cumulative de rater ses incantations. Durant les 3 prochains rounds, la victime aura 10 % de chance d'échouer dans le lancement d'un sort profane, plus 1 % par niveau d'expérience du Tueur de magiciens. Ce talent passif opère en permanence.
+
+Brise-Magie :
+Un Tueur de magiciens peut canaliser sa résistance naturelle à la magie dans ses armes de manière à briser les défenses magiques des lanceurs de sorts profanes. Pour la durée du round où cette capacité est activée, chaque fois que le Tueur de magiciens réussit à toucher sa cible, une de ses protections de combat et une de ses protections particulières sont détruites. Cependant, la résistance magique naturelle du Tueur de magiciens est alors temporairement neutralisée, le rendant vulnérable à la magie pendant les 2 prochains rounds. Le Tueur de magiciens devra attendre que sa résistance à la magie se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
+
+@102 = ~Brise-Magie~
+@103 = ~Vous ne pouvez pas utiliser cette capacité tant que votre résistance magique naturelle n'est pas restaurée.~
+
+
+
+
+
+// HLA revision
+
+@200 = ~Revision des facultes de haut niveau du Tueur de magiciens~
+@210 = ~Réflexion de Sorts~
+@211 = ~Réflexion de Sorts
+
+Un Tueur de magiciens expérimenté peut apprendre à canaliser sa résistance magique naturelle de manière à lui permettre de renvoyer l'énergie magique à sa source. Après avoir activé cette capacité, tous les sorts ciblant directement le Tueur de magiciens sont renvoyés vers le lanceur, et ce pendant 3 rounds. Toutefois, sa résistance à la magie en est temporairement neutralisée, ce qui le rend vulnérable aux effets des sorts qui ne le visent pas directement. Cette vulnérabilité dure le temps où la capacité est active, et persiste encore 3 rounds après expiration. Le Tueur de magiciens devra attendre que sa résistance magique se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
+
+@220 = ~Fléau des Arcanes~
+@221 = ~Fléau des Arcanes
+
+Un Tueur de magiciens expérimenté peut avoir recours à une technique spéciale rendant ses attaques extrêmement efficaces contre ceux qui manient la magie arcanique. Après avoir activé cette capacité, il reçoit pendant 2 rounds un bonus de +5 aux dégâts contre les lanceurs de sorts profanes. En outre, ses assauts deviennent si puissants que ses adversaires doivent réussir un jet de sauvegarde contre la mort avec une pénalité de -4 à chaque coup, sous peine d'oublier un de leurs sorts mémorisés.~
+@223 = ~Oublie un sort mémorisé~
+
+
+
+
+
+// Item restriction changes
+
+@300 = ~Revision des restrictions d'utilisation d'objets pour le Tueur de magiciens~
+@301 = ~Changements minimes~
+@302 = ~Changements moderes~
+
+
+
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES "
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036 = "Saute le GROUPE ["
+@-1037 = "] pour cause d'absence des pre-requis." 
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"

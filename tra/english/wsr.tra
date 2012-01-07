@@ -1,0 +1,66 @@
+@90 = ~* * * The Throne of Bhaal expansion is required for this component * * *~
+@91 = ~* * * This component cannot be installed on Tutu * * *~
+
+@98 = ~* * * A similar component is already present in one of the mods that you are currently using. Preventing unnecessary content duplication. * * *~
+@99 = ~* * * This component cannot be installed due to one of the mods that you are currently using * * *~
+
+
+
+
+
+// Kit revision
+
+@100 = ~Wizard Slayer kit revision~
+@101 = ~WIZARD SLAYER: This warrior specializes in hunting down wielders of arcane magic. To that end, he conditions his body to resist magic and learns attack techniques that can disrupt arcane spellcasting. This rigorous training regimen requires the Wizard Slayer to forego the use of any magic items besides weapons, armor and healing potions. In addition, he must remain fully devoted to his cause and cannot pursue additional professions.
+
+
+Advantages:
+-  Starts with 10% base magic resistance
+-  Gains an additional +2% bonus to magic resistance for every level of experience
+-  Gains the Disrupt Magic passive ability at first level
+-  Gains the Shatter Magic ability at first level and every 8 levels thereafter
+
+
+Disadvantages:
+-  Cannot use any magic items except for weapons, armor and healing potions
+-  Cannot dual-class
+
+
+Disrupt Magic:
+Whenever a Wizard Slayer lands a successful hit on an arcane spellcaster the target is afflicted with a cumulative spell failure penalty. During the next 3 rounds, the victim has a 10% base chance to miscast any arcane spell plus 1% for every experience level the Wizard Slayer attains. This passive ability is always in effect.
+
+
+Shatter Magic:
+A Wizard Slayer can channel his innate magic resistance into his weapons in order to break through the magical defenses of arcane spellcasters. During the round when this ability is activated, each successful hit removes one combat and one specific protection from his target. However, this temporarily nullifies the Wizard Slayer's innate magic resistance making him vulnerable to magic during the next 2 rounds. Until his magic resistance recovers, the Wizard Slayer cannot use any special abilities that rely on it.~
+
+@102 = ~Shatter Magic~
+@103 = ~You cannot use this ability until your innate magic resistance recovers.~
+
+
+
+
+
+// HLA revision
+
+@200 = ~Wizard Slayer High Level Ability revision~
+@210 = ~Reflect Magic~
+@211 = ~Reflect Magic
+
+An experienced Wizard Slayer eventually learns to channel his innate magic resistance in a manner which allows him to reflect magic back to its source. For 3 rounds after this ability is activated, all spells targeted directly against the Wizard Slayer are redirected back to the original caster. However, this temporarily nullifies the Wizard Slayer's innate magic resistance making him vulnerable to any spells that are not directly targeted at him. This vulnerability takes effect when the ability is activated and persists for 3 rounds after it expires. Until his magic resistance recovers, the Wizard Slayer cannot use any special abilities that rely on it.~
+
+@220 = ~Arcane Bane~
+@221 = ~Arcane Bane
+
+An experienced Wizard Slayer can apply a special technique to his attacks making them extremely effective against wielders of arcane magic. For 2 rounds after this ability is activated he gains a +5 bonus to damage against all arcane spellcasters. Furthermore, the Wizard Slayer's attacks become so forceful that his opponents must save vs. death with a -4 penalty or lose one of their memorized spells on each hit.~
+@223 = ~Loses a memorized spell~
+
+
+
+
+
+// Item restriction changes
+
+@300 = ~Revised Wizard Slayer item restrictions~
+@301 = ~Minimal changes~
+@302 = ~Moderate changes~
+

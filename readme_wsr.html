@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us"><head>
+<script type="text/javascript">
+<!--
+function mail(text)
+{
+bits=text.split("###");
+document.write("<a href=\"mailto:"+bits[0]+"@"+bits[2]+"\">"+bits[4]+"</a>");
+}
+-->
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+body {
+cursor: default;
+text-align: center;
+color: #000;
+background-color: #A1A1A1;
+margin-top: 20px;
+margin-bottom: -20px;
+xwidth: 98%;
+}
+#headerdiv-top {
+text-align: center;
+font-family: Verdana, Trebuchet MS, Arial, serif;
+font-size: 200%;
+font-weight: bold;
+line-height: 73%;
+color #020f1d;
+background-color: #fff;
+padding: 15px 0px 15px 0px;
+margin: 0px auto;
+border-left: solid 1px #532529;
+border-right: solid 1px #532529;
+border-bottom: solid 1px #532529;
+border-top: solid 3px #532529;
+width: 90%;
+position: relative;
+display: block;
+}
+#headerdiv-middle {
+text-align: center;
+font: italic 75% Verdana, Trebuchet MS, Arial, serif;
+color: #bbb;
+font-weight: normal;
+background-color: #F1F1F1;
+width: 90%;
+border-left: solid 1px #532529;
+border-right: solid 1px #532529;
+margin: 0px auto;
+padding: 10px 0px 10px 0px;
+position: relative;
+display: block;
+}
+.headerdiv-line {
+color: #532529;
+}
+#headerdiv-middle a:link, #headerdiv-middle a:visited {
+text-decoration: underline;
+background-color: transparent;
+color: #000;
+}
+#headerdiv-middle a:focus, #headerdiv-middle a:hover {
+text-decoration: underline;
+color: #532539;
+}
+#headerdiv-middle a:active {
+color: #000;
+text-decoration: line-through;
+border: none;
+}
+#headerdiv-bottom {
+text-align: center;
+font: 83% Verdana, Trebuchet MS, Arial, serif;
+color: #aaa;
+padding: 8px 0px 8px 0px;
+margin: 0px auto;
+border-left: solid 1px #532529;
+border-right: solid 1px #532529;
+border-bottom: solid 3px #532529;
+border-top: solid 1px #bbb;
+width: 90%;
+background-color: #F1F1F1;
+position: relative;
+display: block;
+}
+#maindiv {
+text-align: center;
+font-family: Verdana, Trebuchet MS, Arial, serif;
+}
+#maindiv div {
+background-color: #F1F1F1;
+color: #020F1D;
+padding: 11px 0px 25px 0px;
+margin: 50px auto;
+border-width: 1px 1px 4px 10px;
+border-style: solid;
+border-color: #532529;
+width: 80%;
+position: relative;
+display: block;
+}
+#maindiv div::before {
+content: counter(kman, lower-roman);
+counter-increment: kman;
+font-size: 100%;
+font-weight: bold;
+color: #fff;
+background-color: #532529;
+width: 42px;
+position: absolute;
+top: 0px;
+left: 0px;
+display: block;
+}
+#maindiv p {
+font-size: 83%;
+font-style: normal;
+text-align: justify;
+line-height: 160%;
+padding: 0px;
+margin: 10px auto;
+width: 90%;
+display: block;
+}
+#headerdiv-bottom a:link, #headerdiv-bottom a:visited {
+font-weight: bold;
+text-decoration: none;
+background-color: transparent;
+color: #000;
+}
+#headerdiv-bottom a:focus, #headerdiv-bottom a:hover {
+text-decoration: none;
+color: #532539;
+}
+#headerdiv-bottom a:active {
+color: #000;
+text-decoration: line-through;
+border: none;
+}
+#maindiv address a:link, #maindiv address a:visited {
+font-weight: bold;
+text-decoration: underline;
+background-color: transparent;
+color: #fff;
+}
+#maindiv address a:focus, #maindiv address a:hover {
+text-decoration: underline;
+color: #532539;
+}
+#maindiv address a:active {
+color: #fff;
+text-decoration: line-through;
+border: none;
+}
+#maindiv address {
+font-size: 70%;
+font-style: normal;
+text-decoration: none;
+color: #959FAA;
+background-color: #532529;
+padding: 3px 0px 0px;
+margin: 0px;
+width: 100%;
+position: absolute;
+bottom: -1px;
+left: 0px;
+display: block;
+text-align: right;
+}
+.address-footer-1 {
+letter-spacing: 0.2em;
+}
+h4 {
+font-family: Verdana, Trebuchet MS, Arial, serif;
+font-size: 150%;
+text-align: left;
+text-indent: 30px;
+padding: 0px 0px 0px 0px;
+border-bottom: dotted 2px #ddd;
+}
+h5 {
+font-family: Verdana, Trebuchet MS, Arial, serif;
+font-size: 120%;
+text-align: left;
+text-indent: 30px;
+padding: 0px 0px 0px 0px;
+}
+h4::first-letter {
+color: #532529;
+background-color: transparent;
+}
+body h1, body #maindiv h3, h1+h2, body #maindiv h4 {
+font-weight: bold;
+display: block;
+}
+#maindiv .divimp {
+font-size: 80%;
+font-family: Verdana;
+text-align: justify;
+background-color: #E1E1E1;
+border-top: solid 1px #bbb;
+border-bottom: solid 1px #bbb;
+border-left: solid 6px #bbb;
+border-right: solid 6px #bbb;
+padding: 10px;
+margin: 20px auto;
+line-height: 150%;
+}
+#maindiv .divimp::before {
+display: none;
+}
+#maindiv .divimp p {
+font-size: 100%;
+text-indent: 0px;
+} .list-numbered {
+list-style-type: decimal;
+margin-top: 0px;
+}
+#headerdiv-top-fw {
+font-size: 40%;
+color: #532529;
+margin: 0px;
+padding-top: 9px;
+display: block;
+}
+.faq-q {
+font-weight: bold;
+font-style: italic;
+text-align: justify;
+}
+.faq-a {
+text-align: justify; }
+#maindiv .version {
+display: block;
+width: 100%;
+background-color: #F1F1F1;
+text-align: left;
+text-indent: 30px;
+font-style: italic;
+padding-top: 1px;
+padding-bottom: 1px;
+border-bottom: solid 1px #bbb;
+border-top: solid 1px #bbb;
+}
+.version-list {
+line-height: 150%;
+font-size: 80%;
+text-align: left;
+list-style-type: square;
+}
+-->
+/*]]>*/
+</style><title>Wizard Slayer Rebalancing</title><!--<script language="javascript" src="SPELLHOLD%20STUDIOS%20-%20readme_files/js.js"></script>--></head>
+<body style="direction: ltr;">
+<br />
+<div id="headerdiv-top">Wizard Slayer Rebalancing<br />
+<span id="headerdiv-top-fw">A
+Spellhold Studios mod</span> </div>
+<div id="headerdiv-middle"> <span class="headerdiv-line">Author:
+aVENGER</span> | <span class="headerdiv-line"><a href="http://www.shsforums.net/forum/234-miscellaneous-released-mods/" target="_blank">Forum</a>&nbsp;</span>|&nbsp;<span class="headerdiv-line"></span><span class="headerdiv-line">Version: 1.04</span></div>
+<div id="headerdiv-bottom"> <a href="#intro">Introduction</a>
+| <a href="#compatibility">Compatibility notes</a>
+| <a href="#installation">Installation</a> | <a href="#components">Components</a> | <a href="#faq">FAQ</a>
+| <a href="#version">Version history</a> | <a href="#credits">Credits</a> |&nbsp;<a href="#Legal_Notice:_">Legal Notice</a> | <a href="#contact">Contact
+info</a> </div>
+<a name="intro" id="intro"></a>
+<div id="maindiv"><!-- ================== I n t r o d u c t i o n ================== -->
+<div>
+<h4>Introduction
+</h4>
+<p><big><span style="font-weight: bold;"></span></big><br />
+This mod
+was largely inspired by several other Wizard Slayer revision mods which
+came before it, most notably Gray Acumen's Kit Improvements, Konalan's
+Tweaks, Ashes of Embers and Kitanya's fixes (by SixOfSpades). This
+version is a bit more conservative and attempts not to stray too far
+from the original kit design. In summary, it tries to enhance the
+Wizard Slayer's inherent strong points while adding some of the
+best&nbsp;features from the aforementioned mods. This should make
+the
+kit a bit more balanced and fun to play while staying mostly true to
+Bioware's original concept. The mod works on normal Baldur's Gate II
+games as well as either of the two Baldur's Gate conversion projects:
+(Easy)<acronym title="Baldur's Gate 1 to 2">Tutu</acronym>
+and Baldur's Gate Trilogy (<acronym title="Baldur's Gate Trilogy">BGT</acronym>).
+</p>
+<div class="divimp"> <span style="font-style: italic;">Note:
+In order to experience all of the new content introduced by this mod it
+is recommended to <span style="font-weight: bold;">start
+a new game</span> after installing it.</span><span style="font-style: italic;"></span><br />
+</div>
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1">&gt;
+Introduction</span>
+<a href="#top">BACK TO TOP</a> </address>
+</div>
+<!-- ================== C o m p a t i b i l i t y ================== --><a name="compatibility" id="compatibility"></a>
+<div>
+<h4>Compatibility
+notes </h4>
+<p> This&nbsp;mod should be compatible
+with most other&nbsp;<a href="http://www.weidu.org/%7Ethebigg/README-WeiDU.html" target="_blank"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>
+mods. Here are some notes on a few specific mods:&nbsp;</p>
+<ul style="text-align: justify; margin-left: 40px; width: 909px;">
+<li><small>If you intend to use this mod alongside
+<span style="font-weight: bold;">Refinements</span>,
+a specific install order must be followed. The kit revision component
+of this mod should be installed before Refinements while its High Level
+Ability revision component should go after Refinements.</small></li>
+<li><small>In case you are using <span style="font-weight: bold;">TobEX</span>, make sure
+that the <span style="font-style: italic;">Magic
+Resistance Mod Fix</span> &nbsp;option in <span style="font-style: italic;">TobExCore.ini</span> is
+set to 0. Otherwise, you may experience some problems when
+using&nbsp;Shatter Magic and Reflect Magic</small><small>.
+Specifically, the magic resistance of the Wizard Slayer will not be
+nullified while these abilities are in effect.</small></li>
+<li><small>Since this mod is largely inspired by similar
+components of <span style="font-weight: bold;">Gray
+Acumen's Kit Improvements,</span> <span style="font-weight: bold;">Konalan's Tweak Pack, Kitanya's
+Wizard Slayer Fixes </span>and&nbsp;<span style="font-weight: bold;">Ashes of Embers</span> it
+is not intended to be used together with them.<br />
+</small></li>
+</ul>
+<p><span style="font-style: italic;"></span>
+</p>
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1">&gt; Compatibility
+Notes</span> <a href="#top">BACK
+TO TOP</a> </address>
+</div>
+<!-- ================== I n s t a l l a t i o n ================== --><a name="installation" id="installation"></a>
+<div>
+<h4>Installation
+</h4>
+<h5> </h5>
+<p>This mod is packaged and installed with&nbsp;<a href="http://www.weidu.org/%7Ethebigg/README-WeiDU.html" target="_blank"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>
+and is
+distributed as
+a self-extracting archive. To
+start the installation procedure simply double click on the
+self-extracting archive&nbsp;and point the installer to
+your
+Baldur's Gate 2 folder (default path C:\Program Files\Black Isle\BGII -
+SoA\). In case you are installing this mod for a&nbsp;<acronym title="Baldur's Gate 1 to 2">BG1Tutu</acronym> or
+a&nbsp;<acronym title="Baldur's Gate Trilogy">BGT</acronym>
+game point the installer to your&nbsp;<acronym title="Baldur's Gate 1 to 2">BG1Tutu</acronym>/<acronym title="Baldur's Gate Trilogy">BGT</acronym> folder
+instead. Before starting the installation&nbsp;procedure make sure
+that neither
+Baldur's Gate 2 nor any third party editors such as <a href="http://www.mud-master.com/shadowkeeper/" target="_blank">Shadow
+Keeper</a> and <a href="http://infexp.sourceforge.net/" target="_blank">Infinity Explorer</a> are currently
+running. After installing the mod you can re-run
+"<span style="font-weight: bold;">setup-wsr.exe</span>"
+in your&nbsp;<acronym title="Baldur's Gate 2">BG2</acronym>
+folder to reinstall, uninstall or otherwise change
+its components.<br />
+</p>
+<span style="font-style: italic;"></span>
+<div class="divimp"> <span style="font-style: italic; font-weight: bold;"></span><span style="font-style: italic;">Note: This mod </span><span style="font-weight: bold; font-style: italic;">requires </span><span style="font-style: italic;">that </span><a style="font-style: italic;" href="http://www.bioware.com/games/shadows_amn/" target="_blank">Baldur's
+Gate 2</a><span style="font-weight: bold; font-style: italic;">
+</span><span style="font-style: italic;">and its</span><span style="font-weight: bold; font-style: italic;"> </span><a style="font-style: italic;" href="http://www.bioware.com/games/throne_bhaal/" target="_blank">Throne of Bhaal expansion</a><span style="font-weight: bold; font-style: italic;">&nbsp;</span><span style="font-style: italic;">as well as
+the </span><a style="font-style: italic;" href="http://www.bioware.com/games/throne_bhaal/support/patches/" target="_blank">latest
+official patch</a><span style="font-style: italic;">
+(version 26498) are&nbsp;installed on your
+system.&nbsp;Furthermore, it
+is&nbsp;</span><span style="font-weight: bold; font-style: italic;">strongly
+recommended</span><span style="font-style: italic;">
+to also download and install the </span><a style="font-style: italic;" href="http://www.gibberlings3.net/bg2fixpack/" target="_blank">G3
+BG2 Fixpack</a><span style="font-style: italic;">
+before proceeding with the installation of this mod.</span></div>
+<br />
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1">&gt;
+Installation</span>
+<a href="#top">BACK TO TOP</a> </address>
+</div>
+<!-- ================== C o m p o n e n t s ================== --><a name="components" id="components"></a>
+<div>
+<h4 style="text-align: justify;"> Components </h4>
+<h3 style="text-align: justify; margin-left: 40px;"><br />
+</h3>
+<h3 style="text-align: justify; margin-left: 40px;"><small><span style="font-weight: bold; text-decoration: underline;"><a name="Wizard_Slayer_kit_revision"></a>Wizard
+Slayer kit revision</span></small><span style="font-weight: bold;"></span></h3>
+<div class="divimp">This warrior specializes in hunting
+down wielders
+of arcane magic. To that end, he conditions his body to resist magic
+and learns attack techniques that can disrupt arcane spellcasting. This
+rigorous training regimen requires the Wizard Slayer to forego the use
+of any magic items besides weapons, armor and healing potions. In
+addition, he must remain fully devoted to his cause and cannot pursue
+additional professions.<br />
+<br />
+<br />
+<span style="font-weight: bold;">Advantages</span>:<br />
+-&nbsp; Starts with 10% base magic resistance<br />
+-&nbsp; Gains an additional +2% bonus to magic resistance for every
+level of experience<br />
+-&nbsp; Gains the Disrupt Magic passive ability at first level<br />
+-&nbsp; Gains the Shatter Magic ability at first level and every 8
+levels thereafter<br />
+<br />
+<br />
+<span style="font-weight: bold;">Disadvantages</span>:<br />
+-&nbsp; Cannot use any magic items except for weapons, armor and
+healing potions<br />
+-&nbsp; Cannot dual-class<br />
+<br />
+<br />
+<span style="font-weight: bold;">Disrupt Magic</span>:<br />
+Whenever a
+Wizard Slayer lands a successful hit on an arcane spellcaster the
+target is afflicted with a cumulative spell failure penalty. During the
+next 3 rounds, the victim has a 10% base chance to miscast any arcane
+spell plus 1% for every experience level the Wizard Slayer attains.
+This passive ability is always in effect.<br />
+<br />
+<br />
+<span style="font-weight: bold;">Shatter Magic</span>:<br />
+A Wizard
+Slayer can channel his innate magic resistance into his weapons in
+order to break through the magical defenses of arcane spellcasters.
+During the round when this ability is activated, each successful hit
+removes one combat and one specific protection from his target.
+However, this temporarily nullifies the Wizard Slayer's innate magic
+resistance making him vulnerable to magic during the next 2 rounds.
+Until his magic resistance recovers, the Wizard Slayer cannot use any
+special abilities that rely on it.</div>
+<br />
+<h3 style="text-align: left; margin-left: 40px; text-decoration: underline;"><small><span style="font-weight: bold;"></span><span style="font-weight: bold;"><a name="Wizard_Slayer_HLA_revision"></a>Wizard Slayer
+High Level ability revision</span></small></h3>
+<div class="divimp">
+<span style="font-weight: bold;">Reflect Magic</span>&nbsp;<span style="font-style: italic;">(replaces Resist Magic)</span><br />
+<br />
+An experienced Wizard Slayer eventually learns to channel his
+innate magic resistance in a manner which allows him to reflect magic
+back to its source. For 3 rounds after this ability is activated, all
+spells targeted directly against the Wizard Slayer are redirected back
+to the original caster. However, this temporarily nullifies the Wizard
+Slayer's innate magic resistance making him vulnerable to any spells
+that are not directly targeted at him. This vulnerability takes effect
+when the ability is activated and persists for 3 rounds after it
+expires. Until his magic resistance recovers, the Wizard Slayer cannot
+use any special abilities that rely on it.<br />
+<br />
+<br />
+<span style="font-weight: bold;">Arcane Bane</span>&nbsp;<span style="font-style: italic;">(replaces War Cry)</span><br />
+<br />
+An experienced Wizard Slayer can apply a special technique to his
+attacks making them extremely effective against wielders of arcane
+magic. For 2 rounds after this ability is activated he gains a +5 bonus
+to damage against all arcane spellcasters. Furthermore, the Wizard
+Slayer's attacks become so forceful that his opponents must save vs.
+death with a -4 penalty or lose one of their memorized spells on each
+hit.<span style="font-weight: bold;"></span><br />
+</div>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><br />
+<h3 style="text-align: justify; margin-left: 40px;"><small><span style="font-weight: bold; text-decoration: underline;"><acronym title="Pen and Paper"><a name="Revised_Wizard_Slayer_item_restrictions"></a>Revised
+Wizard Slayer item restrictions</acronym></span></small><span style="font-weight: bold;"></span></h3>
+<div class="divimp">
+This&nbsp;component&nbsp;slightly loosens the item
+restrictions that are normally imposed on the Wizard Slayer. It can be
+installed in two ways.<br />
+<br />
+The&nbsp;<span style="font-weight: bold;">Minimal
+changes</span>
+option will allow the Wizard Slayer to use items which increase magic
+resistance, such as the Amulet of 5% Magic Resistance, Kaligun's Amulet
+of Magic Resistance, the Cloak of Balduran and the Potion of Magic
+Protection.<br />
+<br />
+In addition to everything mentioned above, the&nbsp;<span style="font-weight: bold;">Moderate changes</span>
+option allows the Wizard Slayer to also use items which provide
+protection from magic in some form, such as the Cloak of Mirroring,
+Belt of Inertial Barrier, Amulet of Spell Warding, Ring of Spell
+Turning, Potion of Magic Shielding and Potion&nbsp;of Magic
+Blocking.</div>
+<br />
+<h3 style="text-align: left; margin-left: 40px; text-decoration: underline;"><small><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span></small></h3>
+<br />
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1">&gt;
+Components</span>
+<a href="#top">BACK TO TOP</a> </address>
+</div>
+<!-- ================== F A Q ================== --> <a name="faq" id="faq"></a>
+<div>
+<h4>Frequently
+Asked Questions</h4>
+<p> <span class="faq-q">Q:
+Do I need the Throne of Bhaal expansion and the latest official patch
+in order to play this mod?</span><br />
+<span class="faq-a">A: Yes, the Throne of Bhaal expansion
+as well as the <a href="http://www.bioware.com/games/throne_bhaal/support/patches/" target="_blank">latest official patch</a> (version
+26498) are both required in order to play this mod. &nbsp;</span></p>
+<p><span class="faq-a"></span></p>
+<p> <span class="faq-q">Q: Do I need one of the
+unofficial fixpacks in order to play this mod?</span><br />
+<span class="faq-a">A: </span>It
+is&nbsp;strongly recommended
+to&nbsp;download and install the <a href="http://www.gibberlings3.net/bg2fixpack/" target="_blank">G3
+BG2 Fixpack</a>
+before installing this mod.<span class="faq-a"></span></p>
+<p><span class="faq-q"></span></p>
+<p><span class="faq-q">Q: Can I use the Baldurdash
+fixpack instead?</span><br />
+<span class="faq-a">A: Possibly, but since Baldurdash
+doesn't fix some
+of the recently discovered bugs, certain issues may arise in that
+combination.</span></p>
+<br />
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1">&gt;
+Frequently Asked Questions</span> <a href="#top">BACK
+TO TOP</a> </address>
+</div>
+<!-- ================== Version History ================== --><a name="version" id="version"></a>
+<div>
+<h4>Version
+History<span class="faq-a"></span><br />
+</h4>
+<div class="divimp"><span style="font-weight: bold;">
+</span><span style="font-weight: bold;">v1.04 - December 30, 2011</span><br />
+<ul><li>Added the&nbsp;Traditional&nbsp;Chinese and&nbsp;Simplified&nbsp;Chinese  translations (by Hindo's Doom)<br /></li></ul><span style="font-weight: bold;"></span><span style="font-weight: bold;">v1.03 - November 26, 2011</span><br />
+<ul><li>Added the French translation (by Sanctifer of the d'Oghmatiques)</li></ul><span style="font-weight: bold;"></span><span style="font-weight: bold;">v1.02 - May 21,
+2011</span><br />
+<ul><li>If TobEx is detected, this mod will now&nbsp;set the "Magic
+Resistance Mod Fix" option in TobExCore.ini to 0 in order to avoid some
+compatibility issues<br /></li></ul><span style="font-weight: bold;"></span><span style="font-weight: bold;">v1.01 - May
+15,
+2011</span><br />
+<ul>
+<li>Added the Russian translation (by Silent, Hawkmoon,
+Njkzy &amp; Prowler - Arcanecoast.ru)</li>
+</ul>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;">v1.00 - May 9,
+2011</span><br />
+<ul>
+<li>First public release<br />
+</li>
+</ul>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span></div>
+<br />
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1">&gt;
+Version History</span>
+<a href="#top">BACK TO TOP</a> </address>
+</div>
+<!-- ================== Credits ================== --> <a name="credits" id="credits"></a>
+<div>
+<h4>Credits
+</h4>
+<p style="text-align: left; margin-left: 40px;"><span style="font-weight: bold;"><a name="Mod_author"></a>Mod
+authors:</span><span style="font-weight: bold;"></span>
+<br />
+</p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li>Much of the contents in this mod is&nbsp;inspired by
+Gray Acumen's Kit
+Improvements, Konalan's Tweaks,<small><span style="font-weight: bold;"> </span><big>Kitanya's
+Wizard Slayer Fixes</big></small>
+(by SixOfSpades) and Ashes of Ambers. Original design credits
+belong&nbsp;to the authors of those mods.&nbsp;</li>
+<li>This version of the mod was compiled by aVENGER.</li>
+</ul>
+<br />
+<p style="text-align: left; margin-left: 40px;" class="faq-q"><a name="Translation_team:"></a>Translation
+team:</p><ul style="text-align: left;"><li style="margin-left: 43px; width: 959px;"><small><span style="font-weight: normal;">&nbsp;Russian: by Silent, Hawkmoon, Njkzy &amp; Prowler - Arcanecoast.ru</span></small></li><li style="margin-left: 43px; width: 959px;"><small><span style="font-weight: normal;">&nbsp;French: by Sanctifer of the d'Oghmatiques</span></small></li><li style="margin-left: 43px; width: 959px;"><small><span style="font-weight: normal;">&nbsp;Chinese: by Hindo's Doom</span></small></li></ul>
+
+<p style="text-align: left; margin-left: 40px; font-weight: normal;" class="faq-q"></p>
+<br />
+<p style="text-align: left; margin-left: 40px;" class="faq-q"><a name="BG_Creators"></a>The
+creators of the
+Baldur's Gate series:</p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li><a href="http://www.bioware.com/" target="_blank">Bioware</a></li>
+<li><a href="http://www.obsidian.net/" target="_blank">Black
+Isle Studios</a></li>
+</ul>
+<p class="faq-q"></p>
+<br />
+<p style="margin-left: 40px; text-align: left;" class="faq-q"><strong><a name="IE_Tools"></a>Tools
+Used in the creation</strong> of this mod: </p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li><a target="_blank" href="http://www.weidu.org/"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>
+by Westley Weimer and the bigg</li>
+<li><a href="http://www.idi.ntnu.no/%7Ejoh/ni/" target="_blank">Near
+Infinity</a> by Jon
+Olav Hauglid</li>
+<li><a target="_blank" href="http://forums.gibberlings3.net/index.php?s=727f49f029e1b99d95758f1217a434fe&amp;showforum=137"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a>
+by my namesake Avenger</li>
+<li><a target="_blank" href="http://iesdp.gibberlings3.net/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a>
+maintained by igi</li>
+<li><a target="_blank" href="http://teambg.eu/index.php?page=tools&amp;cat=32">BAM
+Workshop</a> by Glenn Flansburg</li>
+<li><a target="_blank" href="http://infexp.sourceforge.net/">Infinity
+Explorer</a> by Dmitry Jemerov and bigmoshi</li>
+</ul>
+<p class="faq-q"></p>
+<br />
+<p style="text-align: left; margin-left: 40px;" class="faq-q"><a name="Special_thanks"></a>Special
+thanks:
+</p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li>SConrad
+and K'aeloree of<span style="text-decoration: underline;"></span>
+<a href="http://www.spellholdstudios.net/" target="_blank">Spellhold
+Studios</a> for providing a&nbsp;forum&nbsp;and hosting
+for all my mods</li>
+<li>Wisp for maintaining and supporting&nbsp;my mods </li>
+<li>Kevin
+Dorner for creating the <a href="http://www.baldurdash.org/" target="_blank">Baldurdash BG2 Fixpacks</a>&nbsp;and
+in doing so inspiring me to start
+modding the game myself</li>
+<li>CamDawg and the&nbsp;<a href="http://www.gibberlings3.net/bg2fixpack/" target="_blank">G3
+BG2 Fixpack</a> team for letting me borrow some of their code</li>
+<li>Nythrun for letting me use her file validity checker and
+re-indexer macros</li>
+<li>Idobek, Littiz, CamDawg,
+Nythrun,
+devSin, the bigg, Ascension64, cmorgan and
+pro5 for clarifying&nbsp;various intricacies
+of&nbsp;<acronym title="Weimer Dialogue Utility">WeiDU</acronym>
+coding</li>
+<li>Everyone else from the <a href="http://www.obsidianent.com/" target="_blank">Black
+Isle Studious</a>, <a href="http://www.interplay.com/" target="_blank">Interplay</a>,
+<a href="http://www.bioware.com/" target="_blank">Bioware</a>,&nbsp;<a href="http://www.spellholdstudios.net/" target="_blank">Spellhold
+Studios</a>, <a href="http://www.gibberlings3.net/" target="_blank">Gibberlings Three</a>, <a href="http://www.pocketplane.net/" target="_blank">Pocket
+Plane
+Group</a>, <a href="http://www.blackwyrmlair.net/" target="_blank">Black Wyrm Lair</a> and the other
+Infinity Engine gaming and modding communities who offered their help
+and
+support</li>
+</ul>
+<br />
+<address> <span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1"></span><span class="address-footer-1"></span><span class="address-footer-1">&nbsp;&gt;
+Credits</span>
+<a href="#top">BACK TO TOP</a> </address>
+</div>
+<!-- ================== L E G A L N O T I C E ================== --><a name="legal" id="legal"></a>
+<div style="text-align: justify;">
+<h4><a name="Legal_Notice:_"></a>Legal
+Notice:&nbsp;&nbsp; &nbsp;</h4>
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1"></span><span class="address-footer-1">&nbsp;&gt;
+Legal Notice</span>
+<a href="README_RR.html#top">BACK TO TOP</a> </address>
+<ul style="list-style-type: disc;">
+<li><small><span style="font-weight: bold;"></span></small><small>This
+work is licensed under the Creative Commons
+Attribution-Noncommercial-Share Alike 3.0 Unported License. To view a
+copy of this license, visit <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</a>
+or send a letter to Creative Commons, 171 Second Street, Suite 300, San
+Francisco, California, 94105, USA.</small></li>
+</ul>
+</div>
+<!-- ================== C O N T A C T I N F O ================== --><a name="contact" id="contact"></a>
+<div style="text-align: left;">
+<h4>Contact
+Info:&nbsp;&nbsp; &nbsp;</h4>
+<address><span class="address-footer-1">Wizard
+Slayer Rebalancing &nbsp;</span><span class="address-footer-1"></span><span class="address-footer-1">&nbsp;&gt;
+Contact Info</span>
+<a href="README_RR.html#top">BACK TO TOP</a> </address>
+<ul style="list-style-type: disc;">
+<li><small><span style="font-weight: bold;">forum:&nbsp;&nbsp;</span></small><small><a href="http://www.shsforums.net/forum/234-miscellaneous-released-mods/">http://www.shsforums.net/forum/234-miscellaneous-released-mods/</a></small></li>
+</ul>
+</div>
+</div>
+</body></html>

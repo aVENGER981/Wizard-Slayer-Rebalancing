@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us"><head>
+<script type="text/javascript">
+<!--
+function mail(text)
+{
+bits=text.split("###");
+document.write("<a href=\"mailto:"+bits[0]+"@"+bits[2]+"\">"+bits[4]+"</a>");
+}
+-->
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+body {
+cursor: default;
+text-align: center;
+color: #000;
+background-color: #A1A1A1;
+margin-top: 20px;
+margin-bottom: -20px;
+xwidth: 98%;
+}
+#headerdiv-top {
+text-align: center;
+font-family: Verdana, Trebuchet MS, Arial, serif;
+font-size: 200%;
+font-weight: bold;
+line-height: 73%;
+color #020f1d;
+background-color: #fff;
+padding: 15px 0px 15px 0px;
+margin: 0px auto;
+border-left: solid 1px #532529;
+border-right: solid 1px #532529;
+border-bottom: solid 1px #532529;
+border-top: solid 3px #532529;
+width: 90%;
+position: relative;
+display: block;
+}
+#headerdiv-middle {
+text-align: center;
+font: italic 75% Verdana, Trebuchet MS, Arial, serif;
+color: #bbb;
+font-weight: normal;
+background-color: #F1F1F1;
+width: 90%;
+border-left: solid 1px #532529;
+border-right: solid 1px #532529;
+margin: 0px auto;
+padding: 10px 0px 10px 0px;
+position: relative;
+display: block;
+}
+.headerdiv-line {
+color: #532529;
+}
+#headerdiv-middle a:link, #headerdiv-middle a:visited {
+text-decoration: underline;
+background-color: transparent;
+color: #000;
+}
+#headerdiv-middle a:focus, #headerdiv-middle a:hover {
+text-decoration: underline;
+color: #532539;
+}
+#headerdiv-middle a:active {
+color: #000;
+text-decoration: line-through;
+border: none;
+}
+#headerdiv-bottom {
+text-align: center;
+font: 83% Verdana, Trebuchet MS, Arial, serif;
+color: #aaa;
+padding: 8px 0px 8px 0px;
+margin: 0px auto;
+border-left: solid 1px #532529;
+border-right: solid 1px #532529;
+border-bottom: solid 3px #532529;
+border-top: solid 1px #bbb;
+width: 90%;
+background-color: #F1F1F1;
+position: relative;
+display: block;
+}
+#maindiv {
+text-align: center;
+font-family: Verdana, Trebuchet MS, Arial, serif;
+}
+#maindiv div {
+background-color: #F1F1F1;
+color: #020F1D;
+padding: 11px 0px 25px 0px;
+margin: 50px auto;
+border-width: 1px 1px 4px 10px;
+border-style: solid;
+border-color: #532529;
+width: 80%;
+position: relative;
+display: block;
+}
+#maindiv div::before {
+content: counter(kman, lower-roman);
+counter-increment: kman;
+font-size: 100%;
+font-weight: bold;
+color: #fff;
+background-color: #532529;
+width: 42px;
+position: absolute;
+top: 0px;
+left: 0px;
+display: block;
+}
+#maindiv p {
+font-size: 83%;
+font-style: normal;
+text-align: justify;
+line-height: 160%;
+padding: 0px;
+margin: 10px auto;
+width: 90%;
+display: block;
+}
+#headerdiv-bottom a:link, #headerdiv-bottom a:visited {
+font-weight: bold;
+text-decoration: none;
+background-color: transparent;
+color: #000;
+}
+#headerdiv-bottom a:focus, #headerdiv-bottom a:hover {
+text-decoration: none;
+color: #532539;
+}
+#headerdiv-bottom a:active {
+color: #000;
+text-decoration: line-through;
+border: none;
+}
+#maindiv address a:link, #maindiv address a:visited {
+font-weight: bold;
+text-decoration: underline;
+background-color: transparent;
+color: #fff;
+}
+#maindiv address a:focus, #maindiv address a:hover {
+text-decoration: underline;
+color: #532539;
+}
+#maindiv address a:active {
+color: #fff;
+text-decoration: line-through;
+border: none;
+}
+#maindiv address {
+font-size: 70%;
+font-style: normal;
+text-decoration: none;
+color: #959FAA;
+background-color: #532529;
+padding: 3px 0px 0px;
+margin: 0px;
+width: 100%;
+position: absolute;
+bottom: -1px;
+left: 0px;
+display: block;
+text-align: right;
+}
+.address-footer-1 {
+letter-spacing: 0.2em;
+}
+h4 {
+font-family: Verdana, Trebuchet MS, Arial, serif;
+font-size: 150%;
+text-align: left;
+text-indent: 30px;
+padding: 0px 0px 0px 0px;
+border-bottom: dotted 2px #ddd;
+}
+h5 {
+font-family: Verdana, Trebuchet MS, Arial, serif;
+font-size: 120%;
+text-align: left;
+text-indent: 30px;
+padding: 0px 0px 0px 0px;
+}
+h4::first-letter {
+color: #532529;
+background-color: transparent;
+}
+body h1, body #maindiv h3, h1+h2, body #maindiv h4 {
+font-weight: bold;
+display: block;
+}
+#maindiv .divimp {
+font-size: 80%;
+font-family: Verdana;
+text-align: justify;
+background-color: #E1E1E1;
+border-top: solid 1px #bbb;
+border-bottom: solid 1px #bbb;
+border-left: solid 6px #bbb;
+border-right: solid 6px #bbb;
+padding: 10px;
+margin: 20px auto;
+line-height: 150%;
+}
+#maindiv .divimp::before {
+display: none;
+}
+#maindiv .divimp p {
+font-size: 100%;
+text-indent: 0px;
+} .list-numbered {
+list-style-type: decimal;
+margin-top: 0px;
+}
+#headerdiv-top-fw {
+font-size: 40%;
+color: #532529;
+margin: 0px;
+padding-top: 9px;
+display: block;
+}
+.faq-q {
+font-weight: bold;
+font-style: italic;
+text-align: justify;
+}
+.faq-a {
+text-align: justify; }
+#maindiv .version {
+display: block;
+width: 100%;
+background-color: #F1F1F1;
+text-align: left;
+text-indent: 30px;
+font-style: italic;
+padding-top: 1px;
+padding-bottom: 1px;
+border-bottom: solid 1px #bbb;
+border-top: solid 1px #bbb;
+}
+.version-list {
+line-height: 150%;
+font-size: 80%;
+text-align: left;
+list-style-type: square;
+}
+-->
+/*]]>*/
+</style><title>Rééquilibrage du Tueur de magiciens</title><!--<script language="javascript" src="SPELLHOLD%20STUDIOS%20-%20readme_files/js.js"></script>--></head>
+<body style="direction: ltr;">
+<br />
+<div id="headerdiv-top">Rééquilibrage du Tueur de magiciens<br />
+<span id="headerdiv-top-fw">Un mod Spellhold Studios</span> </div>
+<div id="headerdiv-middle"> <span class="headerdiv-line">Auteur :
+aVENGER</span> | <span class="headerdiv-line"><a href="http://www.shsforums.net/forum/234-miscellaneous-released-mods/" target="_blank">Forum</a>&nbsp;</span>|&nbsp;<span class="headerdiv-line"></span><span class="headerdiv-line">Version: 1.02</span></div>
+<div id="headerdiv-bottom"> <a href="#intro">Introduction</a>
+| <a href="#compatibility">Compatibilité</a>
+| <a href="#installation">Installation</a> | <a href="#components">Composants</a> | <a href="#faq">FAQ</a>
+| <a href="#version">Historique des versions</a> | <a href="#credits">Crédits</a> |&nbsp;<a href="#Legal_Notice:_">Aspects juridiques</a> | <a href="#contact">Contact</a> </div>
+<a name="intro" id="intro"></a>
+<div id="maindiv"><!-- ================== I n t r o d u c t i o n ================== -->
+<div>
+<h4>Introduction
+</h4>
+<p><big><span style="font-weight: bold;"></span></big><br />
+Ce mod est largement inspiré par d'autres mods antérieurs de rééquilibrage du Tueur de magiciens, tout particulièrement "Gray Acumen's Kit Improvements", "Konalan's
+Tweaks", "Ashes of Embers" et "Kitanya's fixes" (par SixOfSpades).
+Cette version est un peu plus classique et essaie de ne pas trop s'éloigner du concept d'origine du kit.
+En bref, elle tente d'insister sur les points forts du Tueur de magiciens tout en ajoutant quelques uns des meilleurs traits des mods cités plus haut.
+Au final, le kit devrait être un peu plus équilibré et amusant à jouer, tout en restant pour l'essentiel fidèle au concept original de Bioware.
+Ce mod fonctionne avec une partie de Baldur's Gate II classique, ainsi qu'avec les deux mods de conversion de Baldur's Gate : (Easy)<acronym title="Baldur's Gate 1 to 2">Tutu</acronym>
+et Baldur's Gate Trilogy (<acronym title="Baldur's Gate Trilogy">BGT</acronym>).
+</p>
+<div class="divimp"> <span style="font-style: italic;">Remarque :
+Afin de profiter de l'ensemble du contenu ajouté par ce mod, il est conseillé de recommencer <span style="font-weight: bold;">une nouvelle partie</span> après l'avoir installé.
+</span><span style="font-style: italic;"></span><br />
+</div>
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1">&gt;
+Introduction</span>
+<a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== C o m p a t i b i l i t y ================== --><a name="compatibility" id="compatibility"></a>
+<div>
+<h4>Compatibilité </h4>
+<p> Ce&nbsp;mod devrait être compatible avec la plupart des autres mods&nbsp;<a href="http://www.weidu.org/%7Ethebigg/README-WeiDU.html" target="_blank"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>. Voici quelques remarques à propos de certains mods en particulier :&nbsp;</p>
+<ul style="text-align: justify; margin-left: 40px; width: 909px;">
+<li><small>Si vous comptez utiliser ce mod conjointement avec <span style="font-weight: bold;">Refinements</span>,
+il vous faudra suivre un ordre d'installation bien précis. Le composant de révision du kit de ce mod doit être installé avant Refinements, 
+alors que le composant révisant les facultés de haut niveau doit être installé après&nbsp;Refinements.</small></li>
+<li><small>Dans le cas où vous utilisez <span style="font-weight: bold;">TobEX</span>, assurez-vous que l'option <span style="font-style: italic;">Magic Resistance Mod Fix</span> est réglée à 0&nbsp;dans le fichier <span style="font-style: italic;">TobExCore.ini</span>.
+Sinon, vous pourriez rencontrer des problèmes en utilisant les capacités&nbsp;Brise-magie et Réflexion de sorts</small><small>.
+Plus précisément, la résistance magique du Tueur de magiciens ne sera pas neutralisée quand ces facultés seront activées.</small></li>
+<li><small>Puisque ce mod est largement inspiré de composants similaires des mods <span style="font-weight: bold;">Gray
+Acumen's Kit Improvements,</span> <span style="font-weight: bold;">Konalan's Tweak Pack, Kitanya's
+Wizard Slayer Fixes </span>et&nbsp;<span style="font-weight: bold;">Ashes of Embers</span>, il n'est pas prévu pour être utilisé en même temps.<br />
+</small></li>
+</ul>
+<p><span style="font-style: italic;"></span>
+</p>
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1">&gt; Compatibilité</span> <a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== I n s t a l l a t i o n ================== --><a name="installation" id="installation"></a>
+<div>
+<h4>Installation
+</h4>
+<h5> </h5>
+<p>Ce mod est distribué et s'installe avec&nbsp;<a href="http://www.weidu.org/%7Ethebigg/README-WeiDU.html" target="_blank"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>
+et est diffusé sous forme de fichier exécutable. Pour lancer la procédure d'installation, double-cliquez sur le fichier exécutable&nbsp;et indiquez le chemin du dossier de Baldur's Gate 2 à l'installeur 
+(le chemin par défaut est C:\Program Files\Black Isle\BGII -SoA\). 
+Si vous installez ce mod pour une partie de&nbsp;<acronym title="Baldur's Gate 1 to 2">BG1Tutu</acronym> ou
+de&nbsp;<acronym title="Baldur's Gate Trilogy">BGT</acronym>, indiquez à l'installeur votre dossier&nbsp;<acronym title="Baldur's Gate 1 to 2">BG1Tutu</acronym>/<acronym title="Baldur's Gate Trilogy">BGT</acronym> à la place. 
+Avant de lancer l'installation, assurez-vous que ni Baldur's Gate 2 
+ni aucun éditeur tiers tels <a href="http://www.mud-master.com/shadowkeeper/" target="_blank">Shadow
+Keeper</a> et <a href="http://infexp.sourceforge.net/" target="_blank">Infinity Explorer</a> ne soient en cours d'utilisation. 
+Après l'installation du mod, vous pouvez lancer à nouveau le fichier "<span style="font-weight: bold;">setup-wsr.exe</span>" dans le dossier&nbsp;<acronym title="Baldur's Gate 2">BG2</acronym> 
+pour réinstaller, désinstaller ou modifier un des composants.<br />
+</p>
+<span style="font-style: italic;"></span>
+<div class="divimp"> <span style="font-style: italic; font-weight: bold;"></span><span style="font-style: italic;">Remarque : L'installation de </span><a style="font-style: italic;" href="http://www.bioware.com/games/shadows_amn/" target="_blank">Baldur's
+Gate 2</a><span style="font-weight: bold; font-style: italic;">
+</span><span style="font-style: italic;">et de son extension</span><span style="font-weight: bold; font-style: italic;"> </span><a style="font-style: italic;" href="http://www.bioware.com/games/throne_bhaal/" target="_blank">Throne of Bhaal</a><span style="font-weight: bold; font-style: italic;">&nbsp;</span><span style="font-style: italic;">ainsi que du
+ </span><a style="font-style: italic;" href="http://www.bioware.com/games/throne_bhaal/support/patches/" target="_blank">dernier
+patch officiel</a><span style="font-style: italic;">
+(version 26498) est </span><span style="font-weight: bold; font-style: italic;">requise</span><span style="font-style: italic;">.&nbsp;De plus, il est&nbsp;</span><span style="font-weight: bold; font-style: italic;">fortement
+recommandé</span><span style="font-style: italic;"> de télécharger et installer le </span><a style="font-style: italic;" href="http://www.gibberlings3.net/bg2fixpack/" target="_blank">
+BG2 Fixpack de G3</a><span style="font-style: italic;"> avant de procéder à l'installation de ce mod.</span></div>
+<br />
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1">&gt;
+Installation</span>
+<a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== C o m p o n e n t s ================== --><a name="components" id="components"></a>
+<div>
+<h4 style="text-align: justify;"> Composants </h4>
+<h3 style="text-align: justify; margin-left: 40px;"><br />
+</h3>
+<h3 style="text-align: justify; margin-left: 40px;"><small><span style="font-weight: bold; text-decoration: underline;"><a name="Wizard_Slayer_kit_revision"></a>Révision du kit de Tueur de magiciens</span></small><span style="font-weight: bold;"></span></h3>
+<div class="divimp">Ce guerrier se spécialise dans la traque des lanceurs de sorts profanes. 
+Pour cela, il conditionne son corps à résister à la magie et développe des techniques d'attaque 
+pouvant perturber l'incantation des sorts profanes. Cet apprentissage rigoureux oblige 
+le Tueur de magiciens à renoncer à l'utilisation du moindre objet magique, exception faite des armes, 
+armures et potions de soins. De plus, il se doit de rester complètement dévoué à sa cause 
+et ne peut se diriger vers d'autres professions.<br />
+<br />
+<br />
+<span style="font-weight: bold;">Avantages</span> :<br />
+-&nbsp; Débute avec 10 % de Résistance magique<br />
+-&nbsp; Gagne 2 % de Résistance magique supplémentaires par niveau d'expérience<br />
+-&nbsp; Reçoit le talent passif "Perturbation Magique" au premier niveau<br />
+-&nbsp; Reçoit la capacité spéciale "Brise-Magie" au premier niveau, puis tous les 8 niveaux<br />
+<br />
+<br />
+<span style="font-weight: bold;">Désavantages</span> :<br />
+-&nbsp; Ne peut pas utiliser d'objets magiques autres qu'armures, armes et potions de soins<br />
+-&nbsp; Ne peut pas se jumeler<br />
+<br />
+<br />
+<span style="font-weight: bold;">Perturbation Magique</span> :<br />
+Quand un Tueur de magiciens réussit à toucher un lanceur de sorts profanes, la cible se voit infliger une probabilité 
+cumulative de rater ses incantations. Durant les 3 prochains rounds, la victime aura 10 % de chance d'échouer à l'incantation d'un sort profane, 
+plus 1 % par niveau d'expérience du Tueur de magiciens. Ce talent passif opère en permanence.<br />
+<br />
+<br />
+<span style="font-weight: bold;">Brise-Magie</span> :<br />
+Un Tueur de magiciens peut canaliser sa résistance naturelle à la magie dans ses armes de manière à briser les défenses 
+magiques des lanceurs de sorts profanes. Pour la durée du round où cette capacité est activée, chaque fois que le Tueur 
+de magiciens réussit à toucher sa cible, une de ses protections de combat et une de ses protections particulières sont détruites. Cependant, la résistance magique naturelle du Tueur de magiciens 
+est alors temporairement neutralisée, le rendant vulnérable à la magie pour les 2 prochains rounds. Le Tueur de magiciens devra attendre que sa résistance à la magie se soit 
+régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.</div>
+<br />
+<h3 style="text-align: left; margin-left: 40px; text-decoration: underline;"><small><span style="font-weight: bold;"></span><span style="font-weight: bold;"><a name="Wizard_Slayer_HLA_revision"></a>Révision des facultés de haut niveau du Tueur de magiciens</span></small></h3>
+<div class="divimp">
+<span style="font-weight: bold;">Réflexion de Sorts</span>&nbsp;<span style="font-style: italic;">(remplace Mental d'Acier)</span><br />
+<br />
+Un Tueur de magiciens expérimenté peut apprendre à canaliser sa résistance magique naturelle de manière à lui permettre 
+de renvoyer l'énergie magique à sa source. Après avoir activé cette capacité, tous les sorts ciblant directement le Tueur 
+de magiciens sont renvoyés vers le lanceur, et ce pendant 3 rounds. Toutefois, sa résistance naturelle à la magie en est temporairement 
+neutralisée, ce qui le rend vulnérable aux effets des sorts qqui ne le visent pas directement. Cette vulnérabilité 
+dure le temps où la capacité est active, et persiste encore 3 rounds après expiration. Le Tueur de magiciens devra attendre 
+que sa résistance magique se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.<br />
+<br />
+<br />
+<span style="font-weight: bold;">Fléau des Arcanes</span>&nbsp;<span style="font-style: italic;">(remplace Cri de Guerre)</span><br />
+<br />
+Un Tueur de magiciens expérimenté peut avoir recours à une technique spéciale rendant ses attaques extrêmement efficaces 
+contre ceux qui manient la magie arcanique. Après avoir activé cette capacité, il reçoit pendant 2 rounds un bonus de +5 aux dégâts 
+contre les lanceurs de sorts profanes. En outre, ses assauts deviennent si puissants que ses adversaires doivent réussir un 
+jet de sauvegarde contre la mort avec une pénalité de -4 à chaque coup, sous peine d'oublier un de leurs sorts mémorisés.<span style="font-weight: bold;"></span><br />
+</div>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><br />
+<h3 style="text-align: justify; margin-left: 40px;"><small><span style="font-weight: bold; text-decoration: underline;"><acronym title="Pen and Paper"><a name="Revised_Wizard_Slayer_item_restrictions"></a>Révision des restrictions d'utilisation d'objets pour le Tueur de magiciens</acronym></span></small><span style="font-weight: bold;"></span></h3>
+<div class="divimp">
+Ce&nbsp;composant&nbsp;rend les restrictions normalement imposées au Tueur de magiciens légèrement moins strictes.
+Deux possibilités sont proposées.<br />
+<br />
+L'option&nbsp;"<span style="font-weight: bold;">Changements minimes</span>" permettra au Tueur de magiciens d'utiliser les objets qui augmentent la résistance à la magie,
+comme l'Amulette de résistance à  la magie +5 %, l'Amulette de résistance magique de Kaligun, la Cape de Baldurien et la potion de résistance à la magie.<br />
+<br />
+En plus des objets ci-dessus, l'option&nbsp;"<span style="font-weight: bold;">Changements modérés</span>" permettra au Tueur de magiciens d'utiliser les objets conférant une protection contre la magie en général, 
+comme la Cape de renvoi, la Ceinture de barrière inertielle, l'Amulette pare-sort, l'Anneau de renvoi des sorts, la potion de protection contre la magie et la potion&nbsp;de blocage de magie.</div>
+<br />
+<h3 style="text-align: left; margin-left: 40px; text-decoration: underline;"><small><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span></small></h3>
+<br />
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1">&gt;
+Composants</span>
+<a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== F A Q ================== --> <a name="faq" id="faq"></a>
+<div>
+<h4>FAQ</h4>
+<p> <span class="faq-q">Q :
+Ai-je besoin d'installer Throne of Bhaal et le dernier patch officiel pour jouer avec ce mod ?</span><br />
+<span class="faq-a">R : Oui, l'extension</span><span style="font-weight: bold; font-style: italic;"> </span><a style="font-style: italic;" href="http://www.bioware.com/games/throne_bhaal/" target="_blank">Throne of Bhaal</a><span style="font-weight: bold; font-style: italic;">&nbsp;</span><span style="font-style: italic;">ainsi que le
+ </span><a style="font-style: italic;" href="http://www.bioware.com/games/throne_bhaal/support/patches/" target="_blank">dernier
+patch officiel</a><span style="font-style: italic;">
+(version 26498) sont tous les deux nécessaires. &nbsp;</span></p>
+<p><span class="faq-a"></span></p>
+<p> <span class="faq-q">Q : Ai-je besoin d'un des patchs non-officiels pour jouer avec ce mod ?</span><br />
+<span class="faq-a">R : Il est&nbsp;fortement
+recommandé de télécharger et installer le </span><a style="font-style: italic;" href="http://www.gibberlings3.net/bg2fixpack/" target="_blank">
+BG2 Fixpack de G3</a><span style="font-style: italic;"> avant d'installer ce mod.<span class="faq-a"></span></p>
+<p><span class="faq-q"></span></p>
+<p><span class="faq-q">Q : Puis-je utiliser le fixpack Baldurdash à la place ?</span><br />
+<span class="faq-a">R : Peut-être, mais comme Baldurdash ne répare pas les bugs récemment découverts, certains problèmes pourraient en résulter.</span></p>
+<br />
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1">&gt;
+FAQ</span> <a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== Version History ================== --><a name="version" id="version"></a>
+<div>
+<h4>Historique des versions<span class="faq-a"></span><br />
+</h4>
+<div class="divimp"><span style="font-weight: bold;">
+</span><span style="font-weight: bold;">v1.02 - 21 mai 2011</span><br />
+<ul><li>Si TobEx est détecté, ce mod règlera automatiquement à zéro l'option "Magic
+Resistance Mod Fix" dans le fichier tobexcore.ini pour des raisons de compatibilité<br /></li></ul><span style="font-weight: bold;"></span><span style="font-weight: bold;">v1.01 - 15 mai 2011</span><br />
+<ul>
+<li>Ajout&nbsp;de la traduction en russe (par Silent, Hawkmoon,
+Njkzy &amp; Prowler - Arcanecoast.ru)</li>
+</ul>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;">v1.00 - 9 mai 2011</span><br />
+<ul>
+<li>Première sortie publique<br />
+</li>
+</ul>
+<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span></div>
+<br />
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1">&gt;
+Historique des versions</span>
+<a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== Credits ================== --> <a name="credits" id="credits"></a>
+<div>
+<h4>Crédits
+</h4>
+<p style="text-align: left; margin-left: 40px;"><span style="font-weight: bold;"><a name="Mod_author"></a>Auteurs du mod :</span><span style="font-weight: bold;"></span>
+<br />
+</p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li>La plupart du contenu de ce mod est inspirée des mods Gray Acumen's Kit
+Improvements, Konalan's Tweaks,<small><span style="font-weight: bold;"> </span><big>Kitanya's
+Wizard Slayer Fixes</big></small>
+(par SixOfSpades) et Ashes of Ambers. Le crédit des idées originales revient à leurs auteurs respectifs.&nbsp;</li>
+<li>Cette version du mod a été compilée par aVENGER.</li>
+</ul>
+<br />
+<p style="text-align: left; margin-left: 40px;" class="faq-q"><a name="Translation_team:"></a>Equipes de traduction :</p><ul style="text-align: left;"><li style="margin-left: 43px; width: 959px;"><small><span style="font-weight: normal;">&nbsp;Russe : par Silent, Hawkmoon, Njkzy &amp; Prowler - Arcanecoast.ru</span></small></li>
+<li style="margin-left: 43px; width: 959px;"><small><span style="font-weight: normal;">&nbsp;Français : par Sanctifer - Les d'Oghmatiques</span></small></li></ul>
+
+<p style="text-align: left; margin-left: 40px; font-weight: normal;" class="faq-q"></p>
+<br />
+<p style="text-align: left; margin-left: 40px;" class="faq-q"><a name="BG_Creators"></a>Les créateurs de la série Baldur's Gate :</p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li><a href="http://www.bioware.com/" target="_blank">Bioware</a></li>
+<li><a href="http://www.obsidian.net/" target="_blank">Black
+Isle Studios</a></li>
+</ul>
+<p class="faq-q"></p>
+<br />
+<p style="margin-left: 40px; text-align: left;" class="faq-q"><strong><a name="IE_Tools"></a>Outils utilisés pour la création</strong> de ce mod : </p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li><a target="_blank" href="http://www.weidu.org/"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>
+par Westley Weimer et the bigg</li>
+<li><a href="http://www.idi.ntnu.no/%7Ejoh/ni/" target="_blank">Near
+Infinity</a> par Jon
+Olav Hauglid</li>
+<li><a target="_blank" href="http://forums.gibberlings3.net/index.php?s=727f49f029e1b99d95758f1217a434fe&amp;showforum=137"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a>
+par mon homonyme Avenger</li>
+<li><a target="_blank" href="http://iesdp.gibberlings3.net/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a>
+maintenu par igi</li>
+<li><a target="_blank" href="http://teambg.eu/index.php?page=tools&amp;cat=32">BAM
+Workshop</a> par Glenn Flansburg</li>
+<li><a target="_blank" href="http://infexp.sourceforge.net/">Infinity
+Explorer</a> par Dmitry Jemerov et bigmoshi</li>
+</ul>
+<p class="faq-q"></p>
+<br />
+<p style="text-align: left; margin-left: 40px;" class="faq-q"><a name="Special_thanks"></a>Remerciements :
+</p>
+<ul style="list-style-type: disc; margin-left: 42px; width: 960px;" class="version-list">
+<li>SConrad
+et K'aeloree de<span style="text-decoration: underline;"></span>
+<a href="http://www.spellholdstudios.net/" target="_blank">Spellhold
+Studios</a> pour la mise à disposition d'un&nbsp;forum&nbsp;et l'hébergement de tous mes mods</li>
+<li>Wisp pour la maintenance et le suivi de mes&nbsp;mods </li>
+<li>Kevin
+Dorner pour la création des <a href="http://www.baldurdash.org/" target="_blank">Baldurdash BG2 Fixpacks</a>&nbsp;et pour l'incitation à me lancer dans la création de mods</li>
+<li>CamDawg et l'équipe du&nbsp;<a href="http://www.gibberlings3.net/bg2fixpack/" target="_blank">
+BG2 Fixpack de G3</a> pour m'avoir laissé emprunter des parties de leur code</li>
+<li>Nythrun pour m'avoir laissé utiliser ses macros de vérification de validité de fichier et de ré-indexation</li>
+<li>Idobek, Littiz, CamDawg,
+Nythrun,
+devSin, the bigg, Ascension64, cmorgan et
+pro5 pour avoir clarifié&nbsp;certaines subtilités du code&nbsp;<acronym title="Weimer Dialogue Utility">WeiDU</acronym></li>
+<li>Tous les autres participants des communautés <a href="http://www.obsidianent.com/" target="_blank">Black
+Isle Studious</a>, <a href="http://www.interplay.com/" target="_blank">Interplay</a>,
+<a href="http://www.bioware.com/" target="_blank">Bioware</a>,&nbsp;<a href="http://www.spellholdstudios.net/" target="_blank">Spellhold
+Studios</a>, <a href="http://www.gibberlings3.net/" target="_blank">Gibberlings Three</a>, <a href="http://www.pocketplane.net/" target="_blank">Pocket
+Plane
+Group</a>, <a href="http://www.blackwyrmlair.net/" target="_blank">Black Wyrm Lair</a> ainsi que de diverses autres consacrées aux jeux Infinity Engine
+qui m'ont offert leur aide et leur soutien</li>
+</ul>
+<br />
+<address> <span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1"></span><span class="address-footer-1"></span><span class="address-footer-1">&nbsp;&gt;
+Crédits</span>
+<a href="#top">RETOUR AU DEBUT</a> </address>
+</div>
+<!-- ================== L E G A L N O T I C E ================== --><a name="legal" id="legal"></a>
+<div style="text-align: justify;">
+<h4><a name="Legal_Notice:_"></a>Aspects juridiques:&nbsp;&nbsp; &nbsp;</h4>
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1"></span><span class="address-footer-1">&nbsp;&gt;
+Aspects juridiques</span>
+<a href="README_RR.html#top">RETOUR AU DEBUT</a> </address>
+<ul style="list-style-type: disc;">
+<li><small><span style="font-weight: bold;"></span></small><small>Cette
+réalisation est soumise à la licence Attribution - Pas d'Utilisation Commerciale -
+Partage à l'Identique 3.0 non transposé. Pour consulter une
+copie de cette licence, allez sur la page <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr">http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr</a>
+ou envoyez une lettre à Creative Commons, 171 Second Street, Suite 300, San
+Francisco, California, 94105, USA.</small></li>
+</ul>
+</div>
+<!-- ================== C O N T A C T I N F O ================== --><a name="contact" id="contact"></a>
+<div style="text-align: left;">
+<h4>Contact :&nbsp;&nbsp; &nbsp;</h4>
+<address><span class="address-footer-1">Rééquilibrage du Tueur de magiciens &nbsp;</span><span class="address-footer-1"></span><span class="address-footer-1">&nbsp;&gt;
+Contact</span>
+<a href="README_RR.html#top">RETOUR AU DEBUT</a> </address>
+<ul style="list-style-type: disc;">
+<li><small><span style="font-weight: bold;">forum:&nbsp;&nbsp;</span></small><small><a href="http://www.shsforums.net/forum/234-miscellaneous-released-mods/">http://www.shsforums.net/forum/234-miscellaneous-released-mods/</a></small></li>
+</ul>
+</div>
+</div>
+</body></html>

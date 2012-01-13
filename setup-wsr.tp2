@@ -7,7 +7,7 @@
 
 BACKUP ~wsr/backup~
 AUTHOR "aVENGER"                                                                   // Author and e-mail address
-VERSION ~v1.04~                                                                    // Mod version
+VERSION ~v1.05~                                                                    // Mod version
 ALWAYS                                                                             // Always do this block
 INCLUDE ~wsr/lib/regexp.tph~                                                       // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
 INCLUDE ~aTweaks/lib/tobexfix.tph~                                                 // if TobEx is installed, this disables some of its currently buggy options
@@ -32,8 +32,7 @@ LANGUAGE %¡c≈È§§§Â (Traditional Chinese)% ~CHT~  ~wsr/tra/english/wsr.tra~ ~wsr/
 
 
 BEGIN @100 DESIGNATED 100 // Wizard Slayer kit revision
-
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @90                              // ToB installation check
+REQUIRE_PREDICATE ENGINE_IS ~tob~ @90                                              // ToB engine required
 
 
 // Spell files
@@ -121,7 +120,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 BEGIN @200 DESIGNATED 200 // Wizard Slayer High Level Ability revision
 
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @90                              // ToB installation check
+REQUIRE_PREDICATE ENGINE_IS ~tob~ @90                                              // ToB engine required
 FORBID_FILE ~override/_sw1h01.itm~ @91                                             // Forbid installation on Tutu
 
 
@@ -199,7 +198,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 BEGIN @301 DESIGNATED 301 // Minimal changes
 SUBCOMPONENT @300  // Revised Wizard Slayer item restrictions
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @90                              // ToB installation check
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @90                                          // SoA or ToB engine
 
 
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
@@ -234,7 +233,7 @@ END                                                                             
 
 BEGIN @302 DESIGNATED 302 // Moderate changes
 SUBCOMPONENT @300  // Revised Wizard Slayer item restrictions
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~mel01.cre~ @90                              // ToB installation check
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @90                                          // SoA or ToB engine
 
 
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files

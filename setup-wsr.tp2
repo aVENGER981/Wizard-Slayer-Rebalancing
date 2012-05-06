@@ -7,10 +7,10 @@
 
 BACKUP ~wsr/backup~
 AUTHOR "aVENGER"                                                                   // Author and e-mail address
-VERSION ~v1.05~                                                                    // Mod version
+VERSION ~v1.06~                                                                    // Mod version
 ALWAYS                                                                             // Always do this block
 INCLUDE ~wsr/lib/regexp.tph~                                                       // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
-INCLUDE ~aTweaks/lib/tobexfix.tph~                                                 // if TobEx is installed, this disables some of its currently buggy options
+INCLUDE ~wsr/lib/tobexfix.tph~                                                     // if TobEx is installed, this disables some of its currently buggy options
 END                                                                                // End the ALWAYS block
 
 README ~wsr/readme_wsr.html~                                                       // Offer to display the main readme

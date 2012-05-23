@@ -1,5 +1,6 @@
 @90 = ~* * * The Throne of Bhaal expansion is required for this component * * *~
 @91 = ~* * * This component cannot be installed on Tutu * * *~
+@92 = ~* * * This component cannot be installed on this game * * *~
 
 @98 = ~* * * A similar component is already present in one of the mods that you are currently using. Preventing unnecessary content duplication. * * *~
 @99 = ~* * * This component cannot be installed due to one of the mods that you are currently using * * *~
@@ -64,3 +65,9 @@ An experienced Wizard Slayer can apply a special technique to his attacks making
 @301 = ~Minimal changes~
 @302 = ~Moderate changes~
 
+
+
+
+// BG2-style icons
+
+@999 = ~BG2-style icons for WSR content~

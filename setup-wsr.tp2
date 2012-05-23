@@ -199,7 +199,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 BEGIN @301 DESIGNATED 301 // Minimal changes
 SUBCOMPONENT @300  // Revised Wizard Slayer item restrictions
-REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @90                                          // SoA or ToB engine
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @92                                          // SoA or ToB engine
 
 
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
@@ -234,7 +234,7 @@ END                                                                             
 
 BEGIN @302 DESIGNATED 302 // Moderate changes
 SUBCOMPONENT @300  // Revised Wizard Slayer item restrictions
-REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @90                                          // SoA or ToB engine
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @92                                          // SoA or ToB engine
 
 
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
@@ -269,6 +269,16 @@ END                                                                             
 END                                                                                // ends ACTION_FOR_EACH block
 
 
+
+
+////////////////////////////////////
+// BG2-style icons for WSR content
+////////////////////////////////////
+
+BEGIN @999 DESIGNATED 999
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob~ @92                                          // SoA or ToB engine
+
+COPY    ~wsr/bam/bg2s~   ~override~
 
 
 

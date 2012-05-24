@@ -1,5 +1,6 @@
 @90  = ~* * * Die Erweiterung "Thron des Bhaal" ist für diese Komponente erforderlich * * *~ 
 @91  = ~* * * Diese Komponente kann nicht mit Tutu installiert werden * * *~
+@92  = ~* * * Diese Komponente kann nicht mit diesem Spiel installiert werden * * *~
 @98  = ~* * * Eine ähnliche Komponente wird bereits von einer genutzen Modifikation verwendet. Dies verhindert unnötige Inhaltsverdoppelungen * * *~ 
 @99  = ~* * * Diese Komponente kann nicht mit einer der bereits installierten Modifikationen installiert werden * * *~
 @100 = ~Magierkiller - Klassenüberarbeitung~ 
@@ -31,3 +32,4 @@ Ein erfahrener Magierkiller kann eine spezielle Technik anwenden, die seine Angr
 @300 = ~Überarbeiteter Magierkiller - Gegenstandsbeschränkungen~ 
 @301 = ~Minimale Veränderungen~
 @302 = ~Moderate Änderungen~
+@999 = ~WSR Icons im BG2 Stil~

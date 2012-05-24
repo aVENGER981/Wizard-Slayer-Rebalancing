@@ -1,9 +1,9 @@
 @90 = ~* * * Ce composant necessite l'installation prealable de Throne of Bhaal. * * *~
 @91 = ~* * * Ce composant n'est pas compatible avec Tutu. * * *~
+@92 = ~* * * Ce composant ne peut pas etre installe sur ce jeu * * *~
 
 @98 = ~* * * Un composant similaire est deja present dans un des mods que vous avez installes. Prevention d'une duplication inutile de contenu. * * *~
 @99 = ~* * * Ce composant ne peut pas etre installe a cause de l'un des mods que vous utilisez actuellement. * * *~
-
 
 
 
@@ -62,6 +62,12 @@ Un Tueur de magiciens expérimenté peut avoir recours à une technique spéciale re
 @301 = ~Changements minimes~
 @302 = ~Changements moderes~
 
+
+
+
+// BG2-style icons
+
+@999 = ~Icones style BG2 pour le contenu de WSR~ 
 
 
 

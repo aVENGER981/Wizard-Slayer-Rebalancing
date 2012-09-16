@@ -7,7 +7,7 @@
 
 BACKUP ~wsr/backup~
 AUTHOR "aVENGER"                                                                   // Author and e-mail address
-VERSION ~v1.06~                                                                    // Mod version
+VERSION ~v1.07~                                                                    // Mod version
 ALWAYS                                                                             // Always do this block
 INCLUDE ~wsr/lib/regexp.tph~                                                       // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
 INCLUDE ~wsr/lib/tobexfix.tph~                                                     // if TobEx is installed, this disables some of its currently buggy options
@@ -23,6 +23,7 @@ LANGUAGE ~French~  ~FRENCH~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/french/wsr.tra~
 LANGUAGE ~ºÚÃÂ÷–Œƒ (Simplified Chinese)~  ~CHS~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/chs/wsr.tra~
 LANGUAGE %¡c≈È§§§Â (Traditional Chinese)% ~CHT~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/cht/wsr.tra~
 LANGUAGE ~German~  ~GERMAN~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/german/wsr.tra~
+LANGUAGE ~Espa§ol por Lisandro acompa§ado por William Imm~ ~SPANISH~ ~wsr/tra/spanish/wsr.tra~
 
 
 

@@ -1,0 +1,42 @@
+@90  = ~* * * Este componente requiere Throne of Bhaal * * *~ 
+@91  = ~* * * Este componente puede ser instalado con Tutu * * *~
+@92  = ~* * * Este componente no puede ser instalado en este juego * * *~ 
+@98  = ~* * * Ya est  presente un componente similar de alg£n otro mod. Evit ndolo por riesgo a una duplicaci¢n. * * *~
+@99  = ~* * * Este componente no se puede instalar debido a una incompatibilidad con uno de los mods actualmente instalados * * * ~ 
+@100 = ~Revisi¢n del Kit de Asesino de Magos~
+@101 = ~ASESINO DE MAGOS: este guerrero se ha especializado en la caza de los adeptos a la magia arcana. Para este fin, ha acondicionado su cuerpo para resistir la magia y aprender técnicas de ataque que puedan interrumpir el lanzamiento de hechizos. Este riguroso régimen de entrenamiento requiere que el Asesino de Magos renuncie a usar cualquier tipo de objeto mágico, menos a armas y pociones curativas. Además debe permanecer de lleno en la causa y no poseer profesiones adicionales.
+
+Ventajas:
+
+- Comienza con 10% de base de resistencia mágica
+- Gana un adicional de +2% de resistencia mágica por cada nivel de experiencia
+- Gana la habilidad pasiva de interrumpir magia en el primer nivel.
+- Gana la habilidad de destruir magia en el primer nivel y cada ocho niveles
+
+Desventajas:
+
+- Los únicos objetos mágicos que podrá utilizar son las armas, armaduras y pociones mágicas.
+- No puede dualizar
+
+Interrumpir magia:
+Cuando el Asesino de Magos obtiene un golpe exitoso contra un lanzador de hechizos arcanos, el objetivo es afligido con un acumulador de penalización de fallo de hechizos. Durante los próximos tres asaltos, la víctima tiene un 10% base de fallar cualquier lanzamiento de hechizos más 1% por cada nivel de experiencia que el Asesino de Magos logre. Esta habilidad pasiva está siempre afectando.
+
+Destruir Magia:
+Un Asesino de Magos puede canalizar su resistencia innata a la magia en sus armas en orden a romper las defensas mágicas del lanzador de magia arcana. Durante el asalto cuando esta habilidad es activada, cada golpe exitoso remueve un combate y una protección específica de su objetivo. Sin embargo, esto temporalmente anula la resistencia mágica innata del Asesino de Magos haciéndole vulnerable a la magia durante los próximos dos asaltos. Hasta que su resistencia a la magia sea recuperada, el Asesino de magos no podrá usar ninguna de sus habilidades especiales.~
+@102 = ~Destruir Magia~ 
+@103 = ~No podéis usar esta habilidad hasta que vuestra resistencia a la magia sea recuperada.~
+@200 = ~Revisi¢n de Habilidades de Alto Nivel del Asesino de Magos~ 
+@210 = ~Reflejar Magia~
+@211 = ~Reflejar Magia
+
+Un Asesino de Magos experimentado eventualmente aprende a canalizar su resistencia a la magia innata de manera que le permita reflejar la magia de nuevo a su fuente de origen.
+Por tres asaltos después de que esta habilidad es activada, todo hechizo lanzado contra el Asesino de Magos será direccionado nuevamente a su lanzador de origen. Sin embargo, esto temporalmente anula la resistencia mágica innata del Asesino de Magos haciéndole vulnerable a la magia que no sea directamente lanzada contra él. Esta vulnerabilidad tendrá efecto cuando la habilidad sea activada y persista por tres asaltos, y luego expirará. Hasta que su resistencia a la magia sea recuperada, el Asesino de magos no podrá usar ninguna de sus habilidades especiales.~
+@220 = ~Perdición Arcana~ 
+@221 = ~Perdición Arcana
+
+Un experimentado Asesino de Magos puede aplicar una técnica especial para sus ataques haciéndolos extremadamente eficaz contra los lanzadores de magia arcana. Durante dos asaltos después de que esta habilidad se activa gana un bonificador +5 a los daños contra todos los lanzadores de conjuros arcanos. Por otra parte, los ataques del asesino del magos llegan a ser tan fuertes que sus adversarios deben salvarse contra la muerte con una penalización de -4 ó perder uno de sus conjuros memorizados en cada golpe.~
+@223 = ~Pérdida de conjuro memorizado~ 
+@300 = ~Revisi¢n de las restricciones de los objetos para los Asesinos de Magos~
+@301 = ~Cambios m¡nimos~
+@302 = ~Cambios moderados~
+@999 = ~Estilo de iconos del BG2 para el contenido de WSR~ 

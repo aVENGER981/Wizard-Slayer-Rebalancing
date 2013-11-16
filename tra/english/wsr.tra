@@ -37,6 +37,10 @@ A Wizard Slayer can channel his innate magic resistance into his weapons in orde
 @102 = ~Shatter Magic~
 @103 = ~You cannot use this ability until your innate magic resistance recovers.~
 
+@104 = ~Shatter Magic
+
+A Wizard Slayer can channel his innate magic resistance into his weapons in order to break through the magical defenses of arcane spellcasters. During the round when this ability is activated, each successful hit removes one combat and one specific protection from his target. However, this temporarily nullifies the Wizard Slayer's innate magic resistance making him vulnerable to magic during the next 2 rounds. Until his magic resistance recovers, the Wizard Slayer cannot use any special abilities that rely on it.~
+
 
 
 

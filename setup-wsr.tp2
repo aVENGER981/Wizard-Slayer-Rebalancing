@@ -89,6 +89,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~OH3000.ARE~ THEN BEGIN                              // BG1EE check
   STRING_SET ~25361~ @101                                                          // New Wizard Slayer kit description
+  STRING_SET ~24285~ @101                                                          // New Wizard Slayer kit description (character sheet)
 END
 
 COPY_EXISTING ~dualclas.2da~ ~override~                                            // dual-class list

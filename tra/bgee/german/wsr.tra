@@ -1,0 +1,35 @@
+@90  = ~* * * Die Erweiterung "Thron des Bhaal" ist für diese Komponente erforderlich * * *~ 
+@91  = ~* * * Diese Komponente kann nicht mit Tutu installiert werden * * *~
+@92  = ~* * * Diese Komponente kann nicht mit diesem Spiel installiert werden * * *~
+@98  = ~* * * Eine ähnliche Komponente wird bereits von einer genutzen Modifikation verwendet. Dies verhindert unnötige Inhaltsverdoppelungen * * *~ 
+@99  = ~* * * Diese Komponente kann nicht mit einer der bereits installierten Modifikationen installiert werden * * *~
+@100 = ~Magierkiller - Klassenüberarbeitung~ 
+@101 = ~MAGIERKILLER:  Dieser Krieger hat sein ganzes Leben einem einzigen Ziel verschrieben: Arkane Zauberwirker zur Strecke zu bringen. Hierfür hat er seinen Körper in einen Zustand versetz in dem dieser sich der Magie erwehren kann und er erlernte Angriffsmethoden, die Magier bei der Ausübung ihrer Zauber unterbrechen können. Strenge Regeln verpflichten den Magierkiller dazu auf alle magischen Gegenstände, abgesehen von Waffen, Rüstungen und Heiltränke, zu verzichten. Zudem jagd er seinen Zielen mit einem solchem Eifer nach, dass es ihm nicht möglich ist den Weg einer weiteren Klasse zu beschreiten.
+
+Besondere Vorteile:
+-  10% Widerstand gegen Magie
+-  + 2% Magiewiderstand pro Stufe
+-  passive Fähigkeit "Magie unterbrechen" auf der 1. Stufe
+-  Fähigkeit "Magie zerstören" auf der 1. Stufe und alle 8 Stufen eine zusätzliche Anwendung
+
+
+Besondere Nachteile:
+-  Darf keine magischen Gegenstände außer Rüstungen, Waffen und Heiltränke verwenden
+-  Darf keine Klassenkombinationen eingehen
+~
+@102 = ~Magie zerstören~
+@103 = ~Du kannst diese Fähigkeit nicht einsetzen bis dein angeborener Magiewiderstand wiederhergestellt ist.~ 
+@200 = ~Überarbeitung der Hochstufigen Fertigkeiten für Magierkiller~
+@210 = ~Magie reflektieren~ 
+@211 = ~Magie reflektieren
+
+Ein erfahrener Magierkiller lernt irgendwann seinen angeborenen Magiewiderstand auf eine Weise zu kanalisieren, die es ihm erlaubt, Magie zurück auf ihre Quelle zu reflektieren. Für 3 Runden nach Anwendung dieser Fähigkeit werden alle Zauber, die direkt auf den Magierkiller gezielt sind, auf den Zaubersprecher zurückgeleitet. Jedoch wird der angeborene Magiewiderstand des Magierkillers aufgehoben, was ihn verwundbar gegenüber Zaubern macht, die nicht direkt gegen ihn gewandt sind. Diese Verwundbarkeit beginnt, sobald die Fähigkeit aktiviert wurde und endet 3 Runden nach ihrem Erlöschen. Wärend sein Magiewiderstand wiederhergestellt wird, kann der Magierkiller keine Fähigkeiten einsetzen, die auf diesen angewiesen ist.~
+@220 = ~Arkaner Bann~
+@221 = ~Arkaner Bann
+
+Ein erfahrener Magierkiller kann eine spezielle Technik anwenden, die seine Angriffe effektiv gegen arkane Zauberwirker werden lässt. Nachdem diese Fähigkeit aktiviert wurde, erhält er für 2 Runden einen Schadensbonus +5 gegen alle arkanen Zauberwirker. Weiterhin werden die Angriffe des Magierkillers so machtvoll, dass sein Gegner einen Rettungswurf +4 gegen Tod bestehen muss oder er verliert mit jedem Schlag einen seiner eingeprägten Sprüche.~ 
+@223 = ~Verliert einen eingeprägten Spruch~
+@300 = ~Überarbeiteter Magierkiller - Gegenstandsbeschränkungen~ 
+@301 = ~Minimale Veränderungen~
+@302 = ~Moderate Änderungen~
+@999 = ~WSR Icons im BG2 Stil~

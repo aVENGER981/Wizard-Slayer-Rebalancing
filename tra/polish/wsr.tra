@@ -1,0 +1,77 @@
+@90 = ~* * * Do dzialania tego komponentu niezbedny jest dodatek Tron Bhaala * * *~
+@91 = ~* * * Komponent ten nie moze zostac zainstalowany dla wersji TuTu * * *~
+@92 = ~* * * Komponent ten nie moze zostac zainstalowany dla tej gry * * *~
+
+@98 = ~* * * W jednej z uzywanych przez ciebie aktualnie modyfikacji obecny jest juz komponent o podobnym dzialaniu. Wdrozono dzialania zapobiegajace duplikowaniu zawartosci. * * *~
+@99 = ~* * * Komponent ten nie moze zostac zainstalowany ze wzgledu na jedna z modyfikacji, ktorej aktualnie uzywasz * * *~
+
+
+
+
+
+// Kit revision
+
+@100 = ~Zmiany w podklasie zabojcy magow~
+@101 = ~ZABÓJCA MAGÓW: Wojownik ten specjalizuje siê w polowaniu na u¿ytkowników magii wtajemniczeñ. W tym celu przysposobi³ swe cia³o, aby opiera³o siê dzia³aniu magii, jak równie¿ nauczy³ siê technik walki, które pozwalaj¹ mu na przerywanie swym wrogom rzucania zaklêæ wtajemniczeñ. Ten rygorystyczny re¿im treningowy wymaga od zabójcy magów zrezygnowania z pos³ugiwania siê wszelkimi magicznymi przedmiotami, poza broni¹, pancerzem oraz miksturami uzdrawiaj¹cymi. Ponadto musi w pe³ni poœwiêciæ siê d¹¿eniu do ustalonego celu i nie mo¿e wybieraæ ¿adnych dodatkowych profesji. 
+
+
+Zalety:
+-  Rozpoczyna z bazow¹ odpornoœci¹ na magiê na poziomie 10%  
+-  Na ka¿dym kolejnym poziomie doœwiadczenia otrzymuje dodatkow¹ premiê 2% do odpornoœci na magiê 
+-  Na pierwszym poziomie otrzymuje pasywn¹ zdolnoœæ Zak³ócenie magii 
+-  Na pierwszym poziomie i co ka¿de kolejne 8 poziomów otrzymuje zdolnoœæ Strzaskanie magii 
+
+
+Wady:
+-  Nie mo¿e u¿ywaæ ¿adnych magicznych przedmiotów, z wyj¹tkiem broni, pancerza i misktur uzdrawi¹jacych 
+-  Nie mo¿e zostaæ dwuklasowcem 
+
+
+Zak³ócenie magii:
+Za ka¿dym razem, gdy zabójca magów wyprowadzi celny cios przeciwko istocie pos³uguj¹cej siê magi¹ wtajemniczeñ, cel otrzyma kumulatywn¹ szansê na nieudane rzucenie zaklêcia. Przez 3 kolejne rundy, gdy ofiara bêdzie próbowa³a rzuciæ dowolne zaklêcie magii wtajemniczeñ, zachodziæ bêdzie 10% prawdopodobieñstwo +1% za ka¿dy poziom doœwiadczenia zabójcy magów na to, ¿e czar ten zakoñczy siê niepowodzeniem. Jest to zdolnoœæ pasywna o sta³ym dzia³aniu. 
+
+
+Strzaskanie magii:
+Zabójca magów potrafi przenieœæ wrodzon¹ odpornoœæ na magiê na swoj¹ broñ, tak aby przebiæ siê przez magiczne os³ony chroni¹ce u¿ytkowników magii wtajemniczeñ. Podczas rundy, w której zdolnoœæ ta zosta³a aktywowana, ka¿de udane trafienie zdejmuje z ofiary jedno bojowe oraz jedno okreœlone zaklêcie ochronne. Dzia³anie tej zdolnoœci anuluje jednak¿e, na okres 2 kolejnych rund, wrodzon¹ odpornoœæ na magiê zabójcy magów, czyni¹c go w tym czasie podatnym na jej dzia³anie. Dopóki zabójca magów nie odzyska wrodzonej odpornoœci na magiê, nie mo¿e u¿ywaæ ¿adnej specjalnej zdolnoœci, która jest od niej zale¿na.~
+
+@102 = ~Strzaskanie magii~
+@103 = ~Nie mo¿esz u¿yæ tej zdolnoœci dopóki nie odzyskasz swej wrodzonej odpornoœci na magiê.~
+
+@104 = ~Strzaskanie magii
+
+Zabójca magów potrafi przenieœæ wrodzon¹ odpornoœæ na magiê na swoj¹ broñ, tak aby przebiæ siê przez magiczne os³ony chroni¹ce u¿ytkowników magii wtajemniczeñ. Podczas rundy, w której zdolnoœæ ta zosta³a aktywowana, ka¿de udane trafienie zdejmuje z ofiary jedno bojowe oraz jedno okreœlone zaklêcie ochronne. Dzia³anie tej zdolnoœci anuluje jednak¿e, na okres 2 kolejnych rund, wrodzon¹ odpornoœæ na magiê zabójcy magów, czyni¹c go w tym czasie podatnym na jej dzia³anie. Dopóki zabójca magów nie odzyska wrodzonej odpornoœci na magiê, nie mo¿e u¿ywaæ ¿adnej specjalnej zdolnoœci, która jest od niej zale¿na.~
+
+
+
+
+
+// HLA revision
+
+@200 = ~Zmiany zdolnosci wysokiego poziomu zabojcy magow~
+@210 = ~Odbicie magii~
+@211 = ~Odbicie magii
+
+Doœwiadczony zabójca magów uczy siê z czasem ukierunkowywaæ wrodzon¹ odpornoœæ na magiê w taki sposób, by móg³ odbijaæ rzucone nañ zaklêcia z powrotem w kierunku Ÿród³a. Przez 3 rundy od momentu aktywowania tej zdolnoœci wszystkie zaklêcia, których celem jest zabójca magów, zostaj¹ skierowane przeciw rzucaj¹cemu. Dzia³anie tej zdolnoœci anuluje jednak¿e tymczasowo wrodzon¹ odpornoœæ na magiê zabójcy magów, czyni¹c go podatnym na ka¿de zaklêcie, które nie jest skierowane bezpoœrednio na niego. Ograniczenie to ma miejsce, gdy zdolnoœæ odbicie magii jest aktywna i utrzymuje siê przez kolejne 3 rundy od momentu jej wygaœniêcia. Dopóki zabójca magów nie odzyska wrodzonej odpornoœci na magiê, nie mo¿e u¿ywaæ ¿adnej specjalnej zdolnoœci, która jest od niej zale¿na.~
+
+@220 = ~Tajemna zguba~
+@221 = ~Tajemna zguba
+
+Doœwiadczony zabójca magów potrafi podczas swych ataków zastosowaæ specjaln¹ technikê, która czyni je niezwykle efektywnymi przeciwko u¿ytkownikom pos³uguj¹cym siê magi¹ wtajemniczeñ. Przez 2 rundy od momentu aktywowania tej zdolnoœci zyskuje premiê +5 do obra¿eñ przeciwko wszystkim u¿ytkownikom magii wtajemniczeñ. Ponadto, ataki zabójcy magów staj¹ siê tak potê¿ne, ¿e jego przeciwnicy musz¹ przy ka¿dym udanym trafieniu wykonywaæ rzut obronny przeciw œmierci z modyfikatorem -4 lub utrac¹ jedno zapamiêtane zaklêcie.~
+@223 = ~Traci jedno zapamiêtane zaklêcie~
+
+
+
+
+
+// Item restriction changes
+
+@300 = ~Zmiany w ograniczeniach uzywania przedmiotow dla zabojcy magow~
+@301 = ~Minimalne zmiany~
+@302 = ~Umiarkowane zmiany~
+
+
+
+
+// BG2-style icons
+
+@999 = ~Styl ikon z BG2 dla zawartosci ZZM~

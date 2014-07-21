@@ -7,3 +7,11 @@ OUTER_INNER_PATCH ~12~ BEGIN
   READ_ASCII 0 mnl (1)  // 0x0d, Mac
   READ_ASCII 0 wnl (2)  // 0x0d0a, Windows
 END
+
+//Load UTF8-encoded tra files if the game is BGEE
+DEFINE_ACTION_MACRO bgee_language BEGIN
+  ACTION_IF GAME_IS ~bgee bg2ee~ BEGIN
+    LOAD_TRA ~wsr/tra/bgee/english/wsr.tra~
+    LOAD_TRA ~wsr/tra/bgee/%LANGUAGE%/wsr.tra~
+  END
+END

@@ -1,0 +1,77 @@
+@90 = ~* * * Do dzialania tego komponentu niezbedny jest dodatek Tron Bhaala * * *~
+@91 = ~* * * Komponent ten nie moze zostac zainstalowany dla wersji TuTu * * *~
+@92 = ~* * * Komponent ten nie moze zostac zainstalowany dla tej gry * * *~
+
+@98 = ~* * * W jednej z uzywanych przez ciebie aktualnie modyfikacji obecny jest juz komponent o podobnym dzialaniu. Wdrozono dzialania zapobiegajace duplikowaniu zawartosci. * * *~
+@99 = ~* * * Komponent ten nie moze zostac zainstalowany ze wzgledu na jedna z modyfikacji, ktorej aktualnie uzywasz * * *~
+
+
+
+
+
+// Kit revision
+
+@100 = ~Zmiany w podklasie zabojcy magow~
+@101 = ~ZABÓJCA MAGÓW: Wojownik ten specjalizuje się w polowaniu na użytkowników magii wtajemniczeń. W tym celu przysposobił swe ciało, aby opierało się działaniu magii, jak również nauczył się technik walki, które pozwalają mu na przerywanie swym wrogom rzucania zaklęć wtajemniczeń. Ten rygorystyczny reżim treningowy wymaga od zabójcy magów zrezygnowania z posługiwania się wszelkimi magicznymi przedmiotami, poza bronią, pancerzem oraz miksturami uzdrawiającymi. Ponadto musi on w pełni poświęcić się dążeniu do ustalonego celu i nie może wybierać żadnych dodatkowych profesji. 
+
+
+Zalety:
+-  Rozpoczyna z bazową odpornością na magię na poziomie 10%  
+-  Na każdym kolejnym poziomie doświadczenia otrzymuje dodatkową premię 2% do odporności na magię 
+-  Na pierwszym poziomie otrzymuje pasywną zdolność Zakłócenie magii 
+-  Na pierwszym poziomie i co każde kolejne 8 poziomów otrzymuje zdolność Strzaskanie magii 
+
+
+Wady:
+-  Nie może używać żadnych magicznych przedmiotów, z wyjątkiem broni, pancerza i misktur uzdrawiających 
+-  Nie może zostać dwuklasowcem 
+
+
+Zakłócenie magii:
+Za każdym razem, gdy zabójca magów wyprowadzi celny cios przeciwko istocie posługującej się magią wtajemniczeń, cel otrzyma kumulatywną szansę na nieudane rzucenie zaklęcia. Przez 3 kolejne rundy, gdy ofiara będzie próbowała rzucić dowolne zaklęcie magii wtajemniczeń, zachodzić będzie 10% prawdopodobieństwo +1% za każdy poziom doświadczenia zabójcy magów na to, że czar ten zakończy się niepowodzeniem. Jest to zdolność pasywna o stałym działaniu. 
+
+
+Strzaskanie magii:
+Zabójca magów potrafi przenieść wrodzoną odporność na magię na swoją broń, tak aby przebić się przez magiczne osłony chroniące użytkowników magii wtajemniczeń. Podczas rundy, w której zdolność ta została aktywowana, każde udane trafienie zdejmuje z ofiary jedno bojowe oraz jedno określone zaklęcie ochronne. Działanie tej zdolności anuluje jednakże, na okres 2 kolejnych rund, wrodzoną odporność na magię zabójcy magów, czyniąc go w tym czasie podatnym na jej działanie. Dopóki zabójca magów nie odzyska wrodzonej odporności na magię, nie może używać żadnej specjalnej zdolności, która jest od niej zależna.~
+
+@102 = ~Strzaskanie magii~
+@103 = ~Nie możesz użyć tej zdolności dopóki nie odzyskasz swej wrodzonej odporności na magię.~
+
+@104 = ~Strzaskanie magii
+
+Zabójca magów potrafi przenieść wrodzoną odporność na magię na swoją broń, tak aby przebić się przez magiczne osłony chroniące użytkowników magii wtajemniczeń. Podczas rundy, w której zdolność ta została aktywowana, każde udane trafienie zdejmuje z ofiary jedno bojowe oraz jedno określone zaklęcie ochronne. Działanie tej zdolności anuluje jednakże, na okres 2 kolejnych rund, wrodzoną odporność na magię zabójcy magów, czyniąc go w tym czasie podatnym na jej działanie. Dopóki zabójca magów nie odzyska wrodzonej odporności na magię, nie może używać żadnej specjalnej zdolności, która jest od niej zależna.~
+
+
+
+
+
+// HLA revision
+
+@200 = ~Zmiany zdolnosci wysokiego poziomu zabojcy magow~
+@210 = ~Odbicie magii~
+@211 = ~Odbicie magii
+
+Doświadczony zabójca magów uczy się z czasem ukierunkowywać wrodzoną odporność na magię w taki sposób, by mógł odbijać rzucone nań zaklęcia z powrotem w kierunku źródła. Przez 3 rundy od momentu aktywowania tej zdolności wszystkie zaklęcia, których celem jest zabójca magów, zostają skierowane przeciw rzucającemu. Działanie tej zdolności anuluje jednakże tymczasowo wrodzoną odporność na magię zabójcy magów, czyniąc go podatnym na każde zaklęcie, które nie jest skierowane bezpośrednio na niego. Ograniczenie to ma miejsce, gdy zdolność odbicie magii jest aktywna i utrzymuje się przez kolejne 3 rundy od momentu jej wygaśnięcia. Dopóki zabójca magów nie odzyska wrodzonej odporności na magię, nie może używać żadnej specjalnej zdolności, która jest od niej zależna.~
+
+@220 = ~Tajemna zguba~
+@221 = ~Tajemna zguba
+
+Doświadczony zabójca magów potrafi podczas swych ataków zastosować specjalną technikę, która czyni je niezwykle efektywnymi przeciwko użytkownikom posługującym się magią wtajemniczeń. Przez 2 rundy od momentu aktywowania tej zdolności zyskuje premię +5 do obrażeń przeciwko wszystkim użytkownikom magii wtajemniczeń. Ponadto, ataki zabójcy magów stają się tak potężne, że jego przeciwnicy muszą przy każdym udanym trafieniu wykonywać rzut obronny przeciw śmierci z modyfikatorem -4 lub utracą jedno zapamiętane zaklęcie.~
+@223 = ~Traci jedno zapamiętane zaklęcie~
+
+
+
+
+
+// Item restriction changes
+
+@300 = ~Zmiany w ograniczeniach uzywania przedmiotow dla zabojcy magow~
+@301 = ~Minimalne zmiany~
+@302 = ~Umiarkowane zmiany~
+
+
+
+
+// BG2-style icons
+
+@999 = ~Styl ikon z BG2 dla zawartosci ZZM~

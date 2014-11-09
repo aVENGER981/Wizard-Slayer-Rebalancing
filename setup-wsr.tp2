@@ -7,7 +7,7 @@
 
 BACKUP ~wsr/backup~
 AUTHOR "aVENGER"                                                                   // Author and e-mail address
-VERSION ~v1.10~                                                                    // Mod version
+VERSION ~v1.11~                                                                    // Mod version
 ALWAYS                                                                             // Always do this block
 INCLUDE ~wsr/lib/regexp.tph~                                                       // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
 INCLUDE ~wsr/lib/tobexfix.tph~                                                     // if TobEx is installed, this disables some of its currently buggy options
@@ -37,7 +37,7 @@ LANGUAGE ~Polish~ ~POLISH~ ~wsr/tra/polish/wsr.tra~
 
 
 BEGIN @100 DESIGNATED 100 // Wizard Slayer kit revision
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee~ @90                                   // ToB engine required
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @90                                   // ToB engine required
 
 
 // Spell files
@@ -64,6 +64,9 @@ COPY    ~wsr/spl/rr#wssm1.spl~               ~override~                         
       PATCH_IF (("%opcode%" = 206) AND ("%param1%" = 74011)) BEGIN                 // display string: "You cannot cast this spell..."
        SAY ("%fx_off%" + 0x04 + (0x30 * ("%index2%" + "%abil_fx_idx%"))) @103      // You cannot use this ability until your innate magic resistance recovers.
       END
+      PATCH_IF ((GAME_IS ~iwdee~) AND ("%opcode%" = 139) AND ("%param1%" = 14790)) BEGIN
+       SAY ("%fx_off%" + 0x04 + (0x30 * ("%index2%" + "%abil_fx_idx%"))) #16967  // display string: Magic Resistance Lowered
+      END
     END
   END
 COPY    ~wsr/spl/rr#wssm2.spl~               ~override~                            // Shatter Magic ability, Part 2
@@ -86,13 +89,18 @@ COPY    ~wsr/bam/rr#wssmb.bam~               ~override~                         
 
 // 2DA modifications
 
-ACTION_IF !FILE_EXISTS_IN_GAME ~OH3000.ARE~ THEN BEGIN                             // not on BG1EE
+ACTION_IF !FILE_EXISTS_IN_GAME ~OH3000.ARE~ THEN BEGIN                             // not on BG:EE
   STRING_SET ~25203~ @101                                                          // New Wizard Slayer kit description
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~OH3000.ARE~ THEN BEGIN                              // BG1EE check
+ACTION_IF FILE_EXISTS_IN_GAME ~OH3000.ARE~ THEN BEGIN                              // BG:EE check
   STRING_SET ~25361~ @101                                                          // New Wizard Slayer kit description
   STRING_SET ~24285~ @101                                                          // New Wizard Slayer kit description (character sheet)
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~HOWPARTY.2DA~ THEN BEGIN                            // IWD:EE check
+  STRING_SET ~25203~ @101                                                          // New Wizard Slayer kit description
+  STRING_SET ~37097~ @101                                                          // New Wizard Slayer kit description (character sheet)
 END
 
 COPY_EXISTING ~dualclas.2da~ ~override~                                            // dual-class list
@@ -132,8 +140,10 @@ BUT_ONLY_IF_IT_CHANGES
 
 BEGIN @200 DESIGNATED 200 // Wizard Slayer High Level Ability revision
 
-REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee~ @90                                   // ToB engine required
+REQUIRE_PREDICATE ENGINE_IS ~tob bgee bg2ee iwdee~ @90                             // ToB engine required
+REQUIRE_PREDICATE !GAME_IS ~iwdee~ @92                                             // Forbid installation on IWD:EE
 FORBID_FILE ~override/_sw1h01.itm~ @91                                             // Forbid installation on Tutu
+
 
 
 COPY    ~wsr/spl/rr#wsrm1.spl~               ~override~                            // Reflect Magic ability
@@ -149,6 +159,9 @@ COPY    ~wsr/spl/rr#wsrm1.spl~               ~override~                         
      READ_LONG  ("%fx_off%" + 0x04 + (0x30 * ("%index2%" + "%abil_fx_idx%"))) "param1"
       PATCH_IF (("%opcode%" = 206) AND ("%param1%" = 74011)) BEGIN                 // display string: "You cannot cast this spell..."
        SAY ("%fx_off%" + 0x04 + (0x30 * ("%index2%" + "%abil_fx_idx%"))) @103      // You cannot use this ability until your innate magic resistance recovers.
+      END
+      PATCH_IF ((GAME_IS ~iwdee~) AND ("%opcode%" = 139) AND ("%param1%" = 14790)) BEGIN
+       SAY ("%fx_off%" + 0x04 + (0x30 * ("%index2%" + "%abil_fx_idx%"))) #16967  // display string: Magic Resistance Lowered
       END
     END
   END
@@ -210,7 +223,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 BEGIN @301 DESIGNATED 301 // Minimal changes
 SUBCOMPONENT @300  // Revised Wizard Slayer item restrictions
-REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee~ @92                               // SoA or ToB engine
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee iwdee~ @92                         // SoA or ToB engine
 
 
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
@@ -220,6 +233,10 @@ ACTION_FOR_EACH ~file~ IN                                                       
              ~_CLCK05~                                                             // Cloak of Balduran (Tutu version)
               ~POTN34~                                                             // Potion of Magic Protection
              ~_POTN34~                                                             // Potion of Magic Protection (Tutu version)
+             ~USPOT3A~                                                             // Potion of Magical Resistance (IWD:EE)
+             ~USPOT4A~                                                             // Potion of Arcane Absorption (IWD:EE)
+             ~USPOT4C~                                                             // Potion of Aura Enhancement (IWD:EE)
+             ~USPOT5A~                                                             // Potion of Dissipation (IWD:EE)
 BEGIN                                                                              // execute the following
 ACTION_IF FILE_EXISTS_IN_GAME ~%file%.itm~ BEGIN                                   // if the designated file with an ITM extension exists
  COPY_EXISTING ~%file%.itm~ ~override~
@@ -245,7 +262,7 @@ END                                                                             
 
 BEGIN @302 DESIGNATED 302 // Moderate changes
 SUBCOMPONENT @300  // Revised Wizard Slayer item restrictions
-REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee~ @92                               // SoA or ToB engine
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee iwdee~ @92                         // SoA or ToB engine
 
 
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
@@ -262,6 +279,12 @@ ACTION_FOR_EACH ~file~ IN                                                       
               ~POTN35~                                                             // Potion of Magic Shielding
              ~_POTN35~                                                             // Potion of Magic Shielding (Tutu version)
               ~RING34~                                                             // Ring of Spell Turning
+             ~USPOT3A~                                                             // Potion of Magical Resistance (IWD:EE)
+             ~USPOT4A~                                                             // Potion of Arcane Absorption (IWD:EE)
+             ~USPOT4C~                                                             // Potion of Aura Enhancement (IWD:EE)
+             ~USPOT5A~                                                             // Potion of Dissipation (IWD:EE)
+             ~POTN15~                                                              // Red Potion (IWD:EE)
+             ~URING4B~                                                             // Ring of the Protector +2 (IWD:EE)
 BEGIN                                                                              // execute the following
 ACTION_IF FILE_EXISTS_IN_GAME ~%file%.itm~ BEGIN                                   // if the designated file with an ITM extension exists
  COPY_EXISTING ~%file%.itm~ ~override~
@@ -287,7 +310,7 @@ END                                                                             
 ////////////////////////////////////
 
 BEGIN @999 DESIGNATED 999
-REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee~ @92                               // SoA or ToB engine
+REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee iwdee~ @92                               // SoA or ToB engine
 
 COPY    ~wsr/bam/bg2s~   ~override~
 

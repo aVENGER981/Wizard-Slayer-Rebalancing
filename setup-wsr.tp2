@@ -7,7 +7,7 @@
 
 BACKUP ~wsr/backup~
 AUTHOR "aVENGER"                                                                   // Author and e-mail address
-VERSION ~v1.11~                                                                    // Mod version
+VERSION ~v1.12~                                                                    // Mod version
 ALWAYS                                                                             // Always do this block
 INCLUDE ~wsr/lib/regexp.tph~                                                       // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
 INCLUDE ~wsr/lib/tobexfix.tph~                                                     // if TobEx is installed, this disables some of its currently buggy options
@@ -285,6 +285,7 @@ ACTION_FOR_EACH ~file~ IN                                                       
              ~USPOT5A~                                                             // Potion of Dissipation (IWD:EE)
              ~POTN15~                                                              // Red Potion (IWD:EE)
              ~URING4B~                                                             // Ring of the Protector +2 (IWD:EE)
+             ~URING1B~                                                             // Ring of Lesser Resistance (IWD:EE)
 BEGIN                                                                              // execute the following
 ACTION_IF FILE_EXISTS_IN_GAME ~%file%.itm~ BEGIN                                   // if the designated file with an ITM extension exists
  COPY_EXISTING ~%file%.itm~ ~override~

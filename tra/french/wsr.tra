@@ -14,8 +14,8 @@
 @101 = ~TUEUR DE MAGICIENS : Ce guerrier se spécialise dans la traque des lanceurs de sorts profanes. Dans ce but, il conditionne son corps à résister à la magie et développe des techniques d'attaque pouvant perturber l'incantation des sorts profanes. Cet apprentissage rigoureux oblige le Tueur de magiciens à renoncer à l'utilisation du moindre objet magique, exception faite des armes, armures et potions de soins. De plus, il se doit de rester complètement dévoué à sa cause et ne peut se diriger vers d'autres professions.
 
 Avantages :
--  Débute avec 10 % de Résistance magique
--  Gain de 2 % de Résistance magique supplémentaires par niveau d'expérience
+-  Débute avec 10 % de Résistance à la magie
+-  Gain de 2 % de Résistance à la magie supplémentaires par niveau d'expérience
 -  Reçoit le talent passif "Perturbation Magique" au premier niveau
 -  Reçoit la capacité spéciale "Brise-Magie" au premier niveau, puis tous les 8 niveaux
 
@@ -25,16 +25,18 @@ Désavantages :
 -  Ne peut pas se jumeler
 
 
-Perturbation Magique :
+ Perturbation Magique :
 Quand un Tueur de magiciens réussit à toucher un lanceur de sorts profanes, la cible se voit infliger une probabilité cumulative de rater ses incantations. Durant les 3 prochains rounds, la victime aura 10 % de chance d'échouer dans le lancement d'un sort profane, plus 1 % par niveau d'expérience du Tueur de magiciens. Ce talent passif opère en permanence.
 
-Brise-Magie :
+ Brise-Magie :
 Un Tueur de magiciens peut canaliser sa résistance naturelle à la magie dans ses armes de manière à briser les défenses magiques des lanceurs de sorts profanes. Pour la durée du round où cette capacité est activée, chaque fois que le Tueur de magiciens réussit à toucher sa cible, une de ses protections de combat et une de ses protections particulières sont détruites. Cependant, la résistance magique naturelle du Tueur de magiciens est alors temporairement neutralisée, le rendant vulnérable à la magie pendant les 2 prochains rounds. Le Tueur de magiciens devra attendre que sa résistance à la magie se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
 
 @102 = ~Brise-Magie~
-@103 = ~Vous ne pouvez pas utiliser cette capacité tant que votre résistance magique naturelle n'est pas restaurée.~
+@103 = ~Vous ne pouvez pas utiliser cette capacité tant que votre résistance à la magie ne s'est pas régénérée.~
 
+@104 = ~Brise-Magie
 
+Un Tueur de magiciens peut canaliser sa résistance naturelle à la magie dans ses armes de manière à briser les défenses magiques des lanceurs de sorts profanes. Pour la durée du round où cette capacité est activée, chaque fois que le Tueur de magiciens réussit à toucher sa cible, une de ses protections de combat et une de ses protections particulières sont détruites. Cependant, la résistance magique naturelle du Tueur de magiciens est alors temporairement neutralisée, le rendant vulnérable à la magie pendant les 2 prochains rounds. Le Tueur de magiciens devra attendre que sa résistance à la magie se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
 
 
 
@@ -44,7 +46,7 @@ Un Tueur de magiciens peut canaliser sa résistance naturelle à la magie dans ses
 @210 = ~Réflexion de Sorts~
 @211 = ~Réflexion de Sorts
 
-Un Tueur de magiciens expérimenté peut apprendre à canaliser sa résistance magique naturelle de manière à lui permettre de renvoyer l'énergie magique à sa source. Après avoir activé cette capacité, tous les sorts ciblant directement le Tueur de magiciens sont renvoyés vers le lanceur, et ce pendant 3 rounds. Toutefois, sa résistance à la magie en est temporairement neutralisée, ce qui le rend vulnérable aux effets des sorts qui ne le visent pas directement. Cette vulnérabilité dure le temps où la capacité est active, et persiste encore 3 rounds après expiration. Le Tueur de magiciens devra attendre que sa résistance magique se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
+Un Tueur de magiciens expérimenté peut apprendre à canaliser sa résistance magique naturelle de manière à lui permettre de renvoyer l'énergie magique à sa source. Après avoir activé cette capacité, tous les sorts ciblant directement le Tueur de magiciens sont renvoyés vers le lanceur, et ce pendant 3 rounds. Toutefois, sa résistance à la magie en est temporairement neutralisée, ce qui le rend vulnérable aux effets des sorts qui ne le visent pas directement. Cette vulnérabilité dure le temps où la capacité est active, et persiste encore 3 rounds après expiration. Le Tueur de magiciens devra attendre que sa résistance à la magie se soit régénérée avant de pouvoir à nouveau utiliser une capacité spéciale qui en dépend.~
 
 @220 = ~Fléau des Arcanes~
 @221 = ~Fléau des Arcanes
@@ -81,7 +83,7 @@ au niveau general plutot que de repondre aux questions pour chacun.
 @-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
 Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
 @-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
-Les [R]einstaller, les s[U]pprimer, dem[A]nder pour chacun ? "
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
 
 @-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
 @-1005= "a"
@@ -111,6 +113,7 @@ Les [R]einstaller, les s[U]pprimer, dem[A]nder pour chacun ? "
 @-1022= "] (composant #"
 @-1023= ")"
 @-1024= "SUPPRESSION REUSSIE DE ["
+
 @-1025= "] ?
 [R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
 @-1026= "] ?
@@ -126,12 +129,41 @@ choisir un parmi :"
 @-1031= "] ?
 [R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
 @-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
-@-1033= "INSTALLATION AVEC DES ALERTES "
+@-1033= "INSTALLATION AVEC DES ALERTES"
 @-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
 @-1035= "Dans la langue"
 
-@-1036 = "Saute le GROUPE ["
-@-1037 = "] pour cause d'absence des pre-requis." 
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
 
 @-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
 @-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

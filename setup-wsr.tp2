@@ -229,6 +229,7 @@ REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee iwdee~ @92                      
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
               ~AMUL19~                                                             // Amulet of 5% Magic Resistance
               ~AMUL20~                                                             // Kaligun's Amulet of Magic Resistance
+              ~AMUL27~                                                             // Amulet of Seldarine
               ~CLCK05~                                                             // Cloak of Balduran
              ~_CLCK05~                                                             // Cloak of Balduran (Tutu version)
               ~POTN34~                                                             // Potion of Magic Protection
@@ -268,6 +269,7 @@ REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee iwdee~ @92                      
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
               ~AMUL19~                                                             // Amulet of 5% Magic Resistance
               ~AMUL20~                                                             // Kaligun's Amulet of Magic Resistance
+              ~AMUL27~                                                             // Amulet of Seldarine
               ~AMUL25~                                                             // Amulet of Spell Warding
               ~BELT10~                                                             // Belt of Inertial Barrier
               ~CLCK05~                                                             // Cloak of Balduran

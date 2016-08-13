@@ -26,6 +26,7 @@ LANGUAGE %¡c≈È§§§Â (Traditional Chinese)% ~CHT~  ~wsr/tra/english/wsr.tra~ ~wsr/
 LANGUAGE ~German~  ~GERMAN~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/german/wsr.tra~
 LANGUAGE ~Espa§ol por Lisandro acompa§ado por William Imm~ ~SPANISH~ ~wsr/tra/spanish/wsr.tra~
 LANGUAGE ~Polish~ ~POLISH~ ~wsr/tra/polish/wsr.tra~
+LANGUAGE ~Italian~ ~ITALIAN~ ~wsr/tra/italian/wsr.tra~
 
 
 
@@ -271,6 +272,7 @@ ACTION_FOR_EACH ~file~ IN                                                       
               ~AMUL20~                                                             // Kaligun's Amulet of Magic Resistance
               ~AMUL27~                                                             // Amulet of Seldarine
               ~AMUL25~                                                             // Amulet of Spell Warding
+              ~AMUL27~                                                             // Amulet of Seldarine
               ~BELT10~                                                             // Belt of Inertial Barrier
               ~CLCK05~                                                             // Cloak of Balduran
              ~_CLCK05~                                                             // Cloak of Balduran (Tutu version)

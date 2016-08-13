@@ -26,6 +26,7 @@ LANGUAGE %¡c≈È§§§Â (Traditional Chinese)% ~CHT~  ~wsr/tra/english/wsr.tra~ ~wsr/
 LANGUAGE ~German~  ~GERMAN~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/german/wsr.tra~
 LANGUAGE ~Espa§ol por Lisandro acompa§ado por William Imm~ ~SPANISH~ ~wsr/tra/spanish/wsr.tra~
 LANGUAGE ~Polish~ ~POLISH~ ~wsr/tra/polish/wsr.tra~
+LANGUAGE ~Italian~ ~ITALIAN~ ~wsr/tra/italian/wsr.tra~
 
 
 
@@ -229,6 +230,7 @@ REQUIRE_PREDICATE ENGINE_IS ~bg2 tob bgee bg2ee iwdee~ @92                      
 ACTION_FOR_EACH ~file~ IN                                                          // for each of the following files
               ~AMUL19~                                                             // Amulet of 5% Magic Resistance
               ~AMUL20~                                                             // Kaligun's Amulet of Magic Resistance
+              ~AMUL27~                                                             // Amulet of Seldarine
               ~CLCK05~                                                             // Cloak of Balduran
              ~_CLCK05~                                                             // Cloak of Balduran (Tutu version)
               ~POTN34~                                                             // Potion of Magic Protection
@@ -269,6 +271,7 @@ ACTION_FOR_EACH ~file~ IN                                                       
               ~AMUL19~                                                             // Amulet of 5% Magic Resistance
               ~AMUL20~                                                             // Kaligun's Amulet of Magic Resistance
               ~AMUL25~                                                             // Amulet of Spell Warding
+              ~AMUL27~                                                             // Amulet of Seldarine
               ~BELT10~                                                             // Belt of Inertial Barrier
               ~CLCK05~                                                             // Cloak of Balduran
              ~_CLCK05~                                                             // Cloak of Balduran (Tutu version)

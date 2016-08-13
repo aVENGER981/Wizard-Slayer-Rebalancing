@@ -1,0 +1,69 @@
+@90 = ~* * * L'espansione Throne of Bhaal è richiesta per questa componente * * *~
+@91 = ~* * * Questa componente non può essere installata su Tutu * * *~
+@92 = ~* * * Questa componente non può essere installata su questo gioco * * *~
+
+@98 = ~* * * Una simile componente è già presente in uno dei mod che al momento stai usando. Prevenire duplicazione non necessaria dei contenuti. * * *~
+@99 = ~* * * Questa componente non può essere installata a causa di uno dei mod che al momento stai usando * * *~
+
+
+
+
+
+// Kit revision
+
+@100 = ~Revisione sottoclasse Ammazzastregoni~
+@101 = ~AMMAZZASTREGONI: Questo guerriero si specializza nel dare la caccia a coloro che padroneggiano la magia arcana. A tale scopo, allena il suo corpo per resistere alla magia e apprende tecniche di attacco capaci di interrompere il lancio di incantesimi. Questo rigoroso regime di addestramento richiede che l'ammazzastregoni rinunci all'uso di qualsiasi oggetto magico ad eccezione di armi, armature e pozioni di guarigione. In aggiunta a ciò, deve restare devoto alla sua causa e non può dedicarsi a professioni aggiuntive.
+
+Vantaggi:
+- Ottiene il 10% di Resistenza alla Magia base.
+- Ottiene un 2% addizionale di Resistenza alla Magia per livello.
+- Ottiene l'abilità passiva Interrompi Magia a partire dal 1° livello.
+
+INTERROMPI MAGIA: Ogni volta che l'ammazzastregoni mette a segno un colpo contro un lanciatore di incantesimi arcani, al bersaglio viene applicata una penalità cumulativa di fallimento incantesimi. Nei successivi 3 round, la vittima ha il 10% di possibilità di sbagliare qualsiasi incantesimo arcano più l'1% per livello di esperienza dell'ammazzastregoni. Questa abilità passiva è sempre in uso.
+
+- Ottiene l'abilità Frantuma Magia (inizia al 1° livello con un uso e ne ottiene uno addizionale ogni 8 livelli).
+
+FRANTUMA MAGIA: Un ammazzastregoni può incanalare la sua innata resistenza alla magia nelle sue armi al fine di oltrepassare le difese magiche dei lanciatori di incantesimi. Durante il round in cui questa abilità è attiva, ciascun colpo messo a segno rimuove una protezione da combattimento e una protezione specifica dal suo bersaglio. Tuttavia, questo annulla temporaneamente l'innata resistenza alla magia dell'ammazzastregoni e lo rende vulnerabile alla magia nei successivi 2 round. Finché la sua resistenza magia non viene ripristinata, l'ammazzastregoni non può usare alcuna abilità speciale che si basi su di essa.
+
+Svantaggi:
+- Non può utilizzare oggetti magici ad eccezione di armi, armature e pozioni di guarigione.
+- Non può biclassare.~
+
+@102 = ~Frantuma Magia~
+@103 = ~Non puoi utilizzare questa abilità finché la tua innata resistenza alla magia non si riprende.~
+
+@104 = ~Frantuma Magia
+Un ammazzastregoni può incanalare la sua innata resistenza alla magia nelle sue armi al fine di oltrepassare le difese magiche dei lanciatori di incantesimi. Durante il round in cui questa abilità è attiva, ciascun colpo messo a segno rimuove una protezione da combattimento e una protezione specifica dal suo bersaglio. Tuttavia, questo annulla temporaneamente l'innata resistenza alla magia dell'ammazzastregoni e lo rende vulnerabile alla magia nei successivi 2 round. Finché la sua resistenza magia non viene ripristinata, l'ammazzastregoni non può usare alcuna abilità speciale che si basi su di essa.~
+
+
+
+
+
+// HLA revision
+
+@200 = ~Revisione Abilita' di Alto Livello dell'Ammazzastregoni~
+@210 = ~Rifletti Magia~
+@211 = ~Rifletti Magia
+Un ammazzastregoni esperto impara infine ad incanalare la sua innata resistenza alla magia in un modo che gli permette di riflettere la magia alla sua fonte. Nei 3 round successivi all'attivazione di questa abilità, tutti gli incantesimi diretti contro l'ammazzastregoni vengono reindirizzati contro il lanciatore. Tuttavia, questo annulla temporaneamente l'innata resistenza alla magia dell'ammazzastregoni e lo rende vulnerabile a tutte le magie che non sono lanciate direttamente contro di lui. Questa vulnerabilità compare appena l'abilità viene attivata e persiste per i 3 round successivi al suo termine. Finché la sua resistenza magia non viene ripristinata, l'ammazzastregoni non può usare alcuna abilità speciale che si basi su di essa.~
+
+@220 = ~Flagello dell'Arcano~
+@221 = ~Flagello dell'Arcano
+Un ammazzastregoni esperto può applicare una speciale tecnica ai suoi attacchi, rendendoli estremamente efficaci contro i lanciatori di incantesimi arcani. Per i 2 round successivi all'attivazione di questa abilità, ottiene un bonus pari a +5 al danno contro tutti i lanciatori di incantesimi arcani. In aggiunta a ciò, gli attacchi dell'ammazzastregoni diventano così potenti che ad ogni colpo messo a segno i suoi bersagli devono effettuare con successo un tiro-salvezza contro Morte con una penalità pari a -4 o perdere uno dei loro incantesimi memorizzati.~
+@223 = ~Perde un incantesimo memorizzato~
+
+
+
+
+
+// Item restriction changes
+
+@300 = ~Revisione Restrizione Oggetti per l'Ammazzastregoni~
+@301 = ~Cambiamenti minimi~
+@302 = ~Cambiamenti moderati~
+
+
+
+
+// BG2-style icons
+
+@999 = ~Icone in stile BG2 per i contenuti del mod~

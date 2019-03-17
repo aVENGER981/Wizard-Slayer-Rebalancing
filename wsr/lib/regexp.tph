@@ -10,7 +10,7 @@ END
 
 //Load UTF8-encoded tra files if the game is BGEE
 DEFINE_ACTION_MACRO bgee_language BEGIN
-  ACTION_IF GAME_IS ~bgee bg2ee~ BEGIN
+  ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN
     LOAD_TRA ~wsr/tra/bgee/english/wsr.tra~
     LOAD_TRA ~wsr/tra/bgee/%LANGUAGE%/wsr.tra~
   END

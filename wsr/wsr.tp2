@@ -6,25 +6,25 @@
 
 
 BACKUP ~wsr/backup~
-AUTHOR "aVENGER"                                                                   // Author and e-mail address
-VERSION ~v1.12~                                                                    // Mod version
-ALWAYS                                                                             // Always do this block
-INCLUDE ~wsr/lib/regexp.tph~                                                       // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
-INCLUDE ~wsr/lib/tobexfix.tph~                                                     // if TobEx is installed, this disables some of its currently buggy options
-LAM bgee_language                                                                  // use UTF-8 encoding on BG:EE
-END                                                                                // End the ALWAYS block
+SUPPORT "aVENGER (http://www.shsforums.net/topic/49205-wizard-slayer-rebalancing-v113/)" // Author nick and support link
+VERSION ~v1.14~                                                                          // Mod version
 
-README ~wsr/readme_wsr.html~                                                       // Offer to display the main readme
-ASK_EVERY_COMPONENT                                                                // Disallow installing all components at once
+ALWAYS                                                                                   // Always do this block
+    INCLUDE ~wsr/lib/regexp.tph~                                                         // allows regexp to match tabs and newlines (from the G3 BG2 Fixpack)
+    INCLUDE ~wsr/lib/tobexfix.tph~                                                       // if TobEx is installed, this disables some of its currently buggy options
+    LAM bgee_language                                                                    // use UTF-8 encoding on BG:EE
+END                                                                                      // End the ALWAYS block
+README ~wsr/readme_wsr.html~                                                             // Offer to display the main readme
+ASK_EVERY_COMPONENT                                                                      // Disallow installing all components at once
 
 
 LANGUAGE ~English~ ~ENGLISH~ ~wsr/tra/english/wsr.tra~
 LANGUAGE ~Russian~ ~RUSSIAN~ ~wsr/tra/english/wsr.tra~ ~wsr/tra/russian/wsr.tra~
 LANGUAGE ~French~  ~FRENCH~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/french/wsr.tra~
-LANGUAGE ~¼òÌåÖÐÎÄ (Simplified Chinese)~  ~CHS~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/chs/wsr.tra~
-LANGUAGE %ÁcÅé¤¤¤å (Traditional Chinese)% ~CHT~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/cht/wsr.tra~
+LANGUAGE ~ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (Simplified Chinese)~  ~CHS~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/chs/wsr.tra~
+LANGUAGE %ï¿½cï¿½é¤¤ï¿½ï¿½ (Traditional Chinese)% ~CHT~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/cht/wsr.tra~
 LANGUAGE ~German~  ~GERMAN~  ~wsr/tra/english/wsr.tra~ ~wsr/tra/german/wsr.tra~
-LANGUAGE ~Espa¤ol por Lisandro acompa¤ado por William Imm~ ~SPANISH~ ~wsr/tra/spanish/wsr.tra~
+LANGUAGE ~Espaï¿½ol por Lisandro acompaï¿½ado por William Imm~ ~SPANISH~ ~wsr/tra/spanish/wsr.tra~
 LANGUAGE ~Polish~ ~POLISH~ ~wsr/tra/polish/wsr.tra~
 LANGUAGE ~Italian~ ~ITALIAN~ ~wsr/tra/italian/wsr.tra~
 
